@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RF Engineer Antenna Guide</title>
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true });
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-        }
-        h1, h2, h3 {
-            color: #003366;
-        }
-        code {
-            background-color: #e9ecef;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        pre {
-            background-color: #e9ecef;
-            padding: 10px;
-            border-radius: 6px;
-            overflow-x: auto;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 15px 0;
-        }
-        table, th, td {
-            border: 1px solid #999;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        .mermaid {
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
+
     <h1>RF Engineer Antenna Knowledge Guide</h1>
     <p>This guide summarizes what an RF engineer needs to know about antennas without diving fully into antenna design.</p>
 
@@ -156,6 +106,4 @@
         <li>Microwave Engineering, David Pozar</li>
         <li>Online: <a href="https://www.antenna-theory.com/" target="_blank">Antenna-Theory.com</a></li>
     </ul>
-</body>
-</html>
 
