@@ -394,4 +394,157 @@ Higher R or lower C shifts the pole to <b>lower frequencies</b>; the opposite sh
 
 
 
+<h1 align="center">📘 Lecture 3: Choosing the Right Capacitor in RC/LC Filters</h1>
+
+## 🔍 RC Filter: Which Component to Choose First?
+
+In an **RC filter**, the corner frequency \( f_c \) is determined by the **time constant**:
+
+\[
+f_c = \frac{1}{2\pi RC}
+\]
+
+Only the **product RC** matters — but practically, **we choose the capacitor (C) first**.
+
+### ✅ Why choose **C first**?
+- Capacitors come in **much wider ranges** (pF → µF → mF) than resistors.
+- In labs, many precise capacitor values are available (1 pF, 2.2 pF, 4.7 pF, 10 pF …).
+- Once **C is chosen**, calculating the matching **R** is easy:
+  
+  \[
+  R = \frac{1}{2\pi f_c C}
+  \]
+
+---
+
+## ⚠ Avoid Electrolytic Capacitors in Filters  
+**Do NOT use electrolytic capacitors** for filters when corner frequency accuracy matters.
+
+✔ Use electrolytic only when your goal is:  
+- **Block DC**  
+- **Pass AC**  
+- **Large capacitance (µF–mF)** is needed with *low precision*
+
+❌ Electrolytics have:  
+- High ESR  
+- Poor tolerance (±20% or worse)  
+- Strong frequency dependence  
+- Non-linear behavior
+
+---
+
+## ⚠ Very Small Caps (1 pF Range)
+When capacitances are **too small**, they behave like **parasitic** capacitances:
+
+- PCB pad capacitance  
+- MOSFET drain–gate capacitance  
+- Stray wiring capacitance  
+
+So avoid **ultra-small caps** unless operating in RF/high-frequency ranges.
+
+---
+
+## 🔍 RL Filter: Which Component to Select First?
+
+In an **RL filter**, the corner frequency is:
+
+\[
+f_c = \frac{R}{2\pi L}
+\]
+
+Here we choose the **inductor (L) first**, because:
+
+- Inductors have **limited, discrete values** in lab stock  
+- Inductors are bulkier, more expensive, and harder to tune  
+- Once L is selected, compute R easily:
+
+\[
+R = 2\pi f_c L
+\]
+
+---
+
+## ❓ Q: For LC Filter, What Do We Choose First?
+
+For an **LC filter**, the resonant frequency is:
+
+\[
+f_0 = \frac{1}{2\pi \sqrt{LC}}
+\]
+
+### 💡 Practical Rule:
+👉 **Choose the inductor (L) first**, then calculate C.
+
+### Why choose L first?
+- Inductor values are restricted (10 nH – 100 µH range)
+- Inductors are expensive and size-dependent  
+- Capacitors are available in huge variety, making C easy to adjust
+
+So:
+
+\[
+C = \frac{1}{(2\pi f_0)^2 L}
+\]
+
+---
+
+## 🧠 Choosing RC vs RL vs LC Filters
+
+### ✔ RC Filter (Most common at low frequencies)
+Use when:
+- Low frequency (<100 kHz)
+- Simple, low-cost filtering
+- No need for high Q
+
+**Why RC?**  
+Huge variety of capacitor values available → easy to hit the exact cutoff.
+
+---
+
+### ✔ RL Filter  
+Use when:
+- Higher current is involved  
+- Low-loss filtering is required  
+- High-power circuits  
+
+---
+
+### ✔ LC Filter (Preferred in RF)
+Use for:
+- **RF circuits**
+- **High-Q filters**
+- **Narrow bandwidth filters**
+- **Antenna matching**
+- **Oscillators**
+
+### Why LC for RF instead of RC or RL?
+🔸 **Better Q-factor**  
+RC filters have resistors → introduce loss → low Q  
+LC filters use reactive components → very high Q → sharp cutoff
+
+🔸 **Frequency-sensitive & tunable**  
+Small changes in L/C precisely tune resonant frequency.
+
+🔸 **Lower loss at RF**  
+Resistors waste power, inductors/caps do not.
+
+🔸 **Impedance matching**  
+LC networks allow matching between RF stages, antennas, amplifiers.
+
+Thus:
+
+> **RC filters are great for low-frequency, low-Q applications  
+> LC filters dominate RF design because they offer high Q and low loss.**
+
+---
+
+## 📄 Summary
+
+| Filter Type | Choose First | Why? |
+|------------|--------------|------|
+| **RC** | Capacitor (C) | Wide range, stable values, easy to select |
+| **RL** | Inductor (L) | Limited values available, harder to tune |
+| **LC** | Inductor (L) | Inductor range is limited; capacitor can be tuned freely |
+
+---
 
