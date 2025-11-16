@@ -180,6 +180,218 @@ Higher frequency → larger negative phase shift.
 </ul>
 
 <hr/>
-<h1 align="center">📘 Lecture 2:Bode plots with one pole filters</h1>
- 
-For RC low pass filter the time constant is 
+
+<h1 align="center">📘 Lecture 2: Bode Plots with One-Pole Filters</h1>
+
+<p>
+For an RC low-pass filter, the <b>time constant</b> is <b>RC</b>, and the <b>transient settling time</b> is approximately <b>5RC</b>.  
+Understanding Bode plots helps us predict filter behavior in the frequency domain.
+</p>
+
+<hr/>
+
+<h2>🔹 What Is a Bode Plot?</h2>
+
+<p>
+A <b>Bode plot</b> consists of two graphs:
+</p>
+
+<ul>
+  <li><b>Magnitude plot</b> → |H(jω)| in dB vs frequency (log scale)</li>
+  <li><b>Phase plot</b> → ∠H(jω) in degrees vs frequency</li>
+</ul>
+
+<p>
+It is essential for circuit design because it shows <b>how filters behave at different frequencies</b> and how phase shifts affect signal timing.
+</p>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/121193e0-a5d0-4299-8ea8-3948768952a3" width="350">
+</div>
+
+<hr/>
+
+<h2>🔹 Do Magnitude and Phase Intersect at One Point?</h2>
+
+<p>
+No — magnitude (in dB) and phase (in degrees) are plotted with <b>different units</b> and scales.  
+They never “intersect”; they are simply plotted together for understanding frequency behavior.
+</p>
+
+<hr/>
+
+<h2>🔹 What Is a Load? Why Does It Matter?</h2>
+
+<p>
+A <b>load</b> is any component connected to the output (often a resistor).  
+Adding a load changes the <b>effective impedance</b> seen by the filter, which can:
+</p>
+
+<ul>
+  <li>Shift the cutoff (corner) frequency</li>
+  <li>Change the gain</li>
+  <li>Modify phase response</li>
+</ul>
+
+<p>
+Only when the load resistance is <b>very large</b> compared to filter impedances does the filter behave ideally.
+</p>
+
+<hr/>
+
+<h2>🔹 When Does the Load Alter the Corner Frequency?</h2>
+
+<p>
+Load affects the corner frequency when:
+</p>
+
+<ul>
+  <li><b>R<sub>load</sub></b> is comparable to the filter resistance</li>
+  <li><b>R<sub>load</sub></b> is comparable to the capacitive reactance X<sub>C</sub> at critical frequencies</li>
+</ul>
+
+<p>
+Load does <b>not</b> affect the filter when:
+</p>
+
+<ul>
+  <li><b>R<sub>load</sub> ≫ R</b> and <b>R ≫ X<sub>C</sub></b> (at corner frequency)</li>
+</ul>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/19dbc47b-9cc4-445f-b4e0-e3d5036340c3" width="180">
+</div>
+
+<p><i>Why?</i>  
+Because if R<sub>load</sub> is huge, almost <b>no current flows through it</b>, so it does not load or distort the RC network.  
+The filter behaves as if the load is not there.</p>
+
+<hr/>
+
+<h2>🔹 Source Resistance Also Matters</h2>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c887070c-9618-46d0-82af-52c4a7d4ba3c" width="180">
+</div>
+
+<p>
+Source resistance adds to the filter’s effective R and therefore shifts the <b>corner frequency</b>.
+</p>
+
+<h3>👉 How to Compensate Loading or Source Effects?</h3>
+
+<ul>
+  <li>Choose <b>smaller capacitors</b> or <b>larger resistors</b> to restore cutoff</li>
+  <li>Use <b>buffer amplifiers</b> (op-amps) so load does not affect the filter</li>
+  <li>Design for the <b>actual</b> R<sub>source</sub> and R<sub>load</sub> instead of ideal assumptions</li>
+</ul>
+
+<hr/>
+
+<h1 align="center">🎚 High-Pass Filter</h1>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4af610b1-ca1d-420a-b983-50761a5572a9" width="300">
+</div>
+
+<p>
+A high-pass filter has:
+</p>
+
+<ul>
+  <li><b>One zero</b> (at ω = 0)</li>
+  <li><b>One pole</b> (at ω = 1/RC or R/L)</li>
+  <li>Same time constant as LPF: <b>RC</b> or <b>L/R</b></li>
+</ul>
+
+<h2>🔹 Amplitude Plot</h2>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/05a645f5-f16c-466d-ac83-a3facf5bb7cc" width="350"><br><br>
+  <img src="https://github.com/user-attachments/assets/d2286ca4-650b-4339-9ef3-4795ca81ced2" width="350">
+</div>
+
+<p>
+At low frequencies → output is small (capacitor blocks DC).  
+At high frequencies → output follows input (capacitor becomes short).
+</p>
+
+<hr/>
+
+<h2>🔹 Phase Response of High-Pass Filter</h2>
+
+<p>
+Phase lies between:
+</p>
+
+<pre>
++90° (low frequencies) → 0° (high frequencies)
+</pre>
+
+<p>
+At low frequency, the capacitor leads, giving a +90° phase shift.  
+At high frequency, the circuit behaves like a resistor → no phase shift.
+</p>
+
+<hr/>
+
+<h2>🔹 Why Do Capacitors Lead and Inductors Lag?</h2>
+
+<p>
+This comes from the voltage–current equations:
+</p>
+
+<pre>
+Capacitor:     i = C dv/dt   → current leads voltage  
+Inductor:      v = L di/dt   → voltage leads current
+</pre>
+
+<p>
+This results in a maximum phase shift of <b>±90°</b> for each L or C.  
+To get higher phase shifts (e.g., 125°, 178°), you need <b>multiple poles</b>.
+</p>
+
+<hr/>
+
+<h2>🔹 Load/Source Effects in High-Pass Filters</h2>
+
+<p>
+Just like low-pass filters, high-pass filters are also affected by:
+</p>
+
+<ul>
+  <li>Load resistance</li>
+  <li>Source resistance</li>
+</ul>
+
+<p>
+They change both the <b>zero</b> and the <b>pole</b>, thus altering cutoff and phase response.
+</p>
+
+<hr/>
+
+<h1 align="center">📘 Summary: Low-Pass vs High-Pass</h1>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/cd84faf3-f4d1-46dc-8a86-9bfdc6ddab36" width="420">
+</div>
+
+<hr/>
+
+<h1 align="center">🎯 Pole–Zero Design</h1>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e432e25a-25b7-4f2e-a3a7-09a32f58f291" width="450">
+</div>
+
+<p>
+Pole–zero placement gives us <b>design freedom</b> to choose R, C, or L values.  
+Higher R or lower C shifts the pole to <b>lower frequencies</b>; the opposite shifts it higher.
+</p>
+
+<hr/>
+
+
+
+
+
