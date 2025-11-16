@@ -173,12 +173,13 @@ Higher frequency → larger negative phase shift.
   <li>Filters pass selected frequencies and block others.</li>
   <li>A single pole corresponds to a first-order filter.</li>
   <li>Transfer function: <b>H(s) = Vout/Vin</b>.</li>
-  <li>Impedance defines frequency behavior of R, L, and C.</li>
+  <li>Impedance defines the frequency behavior of R, L, and C.</li>
   <li>Single-pole filters have <b>20 dB/decade</b> roll-off.</li>
   <li>Corner frequency occurs at <b>−3 dB</b> output.</li>
   <li>Phase shift for a single-pole LPF ranges from <b>0° to −90°</b>.</li>
 </ul>
 
 <hr/>
-
-<h2 align="center">✨ End of Lecture 1 Documentation</h2>
+<h1 align="center">📘 Lecture 2:Bode plots with one pole filters</h1>
+ 
+For RC low pass filter the time constant is 
