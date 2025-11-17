@@ -1494,4 +1494,12 @@ For all Butterworth LP, HP, BP, and notch filters, we assume:
   <li>All filter designs assume matched source and load impedances.</li>
 </ul>
 
+<h1 align="center">📘 Lecture 11: Impedance matching in filter circuit</h1>
+Q: When we say that source impedance and load impedance is matched what does we mean? 
+<img width="517" height="245" alt="image" src="https://github.com/user-attachments/assets/1602ab43-d5b6-4a76-ab3b-aeaae9b70aca" />
 
+# Matching (IMPEDANCE MATCHING)
+
+1. Adding a resistor:
+   <img width="543" height="295" alt="image" src="https://github.com/user-attachments/assets/a30e232d-9279-49a7-a10b-a19721b863eb" />
+Adding resistor is not a desired option we are looking for as adding resistor there will be lot of power loss
