@@ -1113,3 +1113,16 @@ At resonance:</p>
 </ul>
 
 <hr>
+
+
+<h1 align="center">📘 Lecture 9: Why do we need a filter with lots of poles</h1>
+Q: what does the meaning of order in a filter like 1st order 2nd order etc?
+in the 1st order filter: the high frequqency signal doesn't block they attenuates the signal.
+As long as far enogh away from the corner frequencies you are getting the roll off of 40dB/Decade
+more pole more roll off and more in the shape of ideal filter.
+<img width="569" height="311" alt="image" src="https://github.com/user-attachments/assets/41f3cd9a-fe27-43a4-a79e-deeb18b21d4d" />
+
+# TRICKS to build a  higher order filter which always works
+Each component does something favaorable the the frequencies that we are trying to eliminate from the filter
+<img width="512" height="308" alt="image" src="https://github.com/user-attachments/assets/31378726-f22b-47cc-9df3-8c0627f943e9" />
+
