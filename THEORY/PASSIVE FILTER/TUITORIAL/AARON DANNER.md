@@ -1502,4 +1502,12 @@ Q: When we say that source impedance and load impedance is matched what does we 
 
 1. Adding a resistor:
    <img width="543" height="295" alt="image" src="https://github.com/user-attachments/assets/a30e232d-9279-49a7-a10b-a19721b863eb" />
-Adding resistor is not a desired option we are looking for as adding resistor there will be lot of power loss
+ Adding resistor is not a desired option we are looking for as adding resistor there will be a lot of power loss
+ <img width="524" height="281" alt="image" src="https://github.com/user-attachments/assets/2ac95fb2-df7d-4a23-a432- 7e4969701da0" />
+
+2. Transformer for impedance matching:
+<img width="528" height="251" alt="image" src="https://github.com/user-attachments/assets/bcbc71c1-5d76-45f2-986b-be8d0ce7fe20" />
+this cann't always be the option as the transformer tend to be bulky expensive and thy burn up little bit of power so this is not always the preferered option.
+3. L- section impedance matching:
+it's defining as simply adding an inductr and capacitor pair to the filter circuit in order to correct an imbalance of load and source impedance effectively
+  
