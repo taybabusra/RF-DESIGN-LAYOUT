@@ -1308,5 +1308,190 @@ Here is a practical overview:</p>
 
 <hr/>
 
-<p align="center"><b>✨ This HTML is fully ready to paste directly into your GitHub README.md</b></p>
+
+
+
+<h1 align="center">📘 Lecture 10: Designing Passive Butterworth Filters</h1>
+
+<p align="center"><b>Objective:</b> Learn how to design Butterworth High-Pass (HP) and Low-Pass (LP) Filters</p>
+
+<hr/>
+
+<h2>📌 Key Butterworth Filter Properties</h2>
+
+<ul>
+  <li>For <b>odd</b> number of poles → one pole is real, the rest are complex-conjugate pairs.</li>
+  <li>For <b>even</b> number of poles → all poles are complex-conjugate pairs.</li>
+  <li>Maximally flat response: fully monotonic passband and stopband.</li>
+</ul>
+
+<img width="503" alt="image" src="https://github.com/user-attachments/assets/545c6e9c-fdc0-4346-ab00-acc762990bb5" />
+
+<h2>🔧 Important Parameters</h2>
+
+<ol>
+  <li><b>Corner Frequency</b> (cutoff frequency)</li>
+  <li><b>Roll-off Rate</b> = 20n dB/decade for an n-pole Butterworth filter</li>
+  <li><b>Prototype Circuit</b> (normalized 1 Ω, 1 rad/sec design)</li>
+</ol>
+
+<hr/>
+
+<h2>📂 Series-Fed vs Shunt-Fed Filters</h2>
+
+<p><b>Definition:</b> A filter is called <b>series-fed</b> or <b>shunt-fed</b> depending on whether the first component is in series or shunt with respect to the source.</p>
+
+<h3>🎯 Which One Should You Use?</h3>
+
+<h4>✔ Series-Fed Filter</h4>
+<ul>
+  <li>Best when source impedance is <b>low</b></li>
+  <li>Series components (L or C) drop less voltage when driven by a low-impedance source</li>
+  <li>Improves power transfer and reduces component stress</li>
+</ul>
+
+<h4>✔ Shunt-Fed Filter</h4>
+<ul>
+  <li>Best when load impedance is <b>high</b></li>
+  <li>Shunt capacitors/inductors are more effective when connected to high impedance</li>
+  <li>Used to reduce number of inductors in RF filters</li>
+</ul>
+
+<h3>❓ Q: Do Series-Fed and Shunt-Fed Filters Have the Same Poles, Zeros, and Roll-Off?</h3>
+
+<p><b>Yes.</b>  
+Changing series ↔ shunt does <b>not</b> change the poles or roll-off rate.  
+It only changes how components interact with real-world source/load impedances.</p>
+
+<hr/>
+
+<h2>📐 Does the Transfer Function Follow Pascal’s Triangle?</h2>
+
+<img width="467" src="https://github.com/user-attachments/assets/aad1b64e-327a-4130-b526-d09968339971" />
+
+<p>Yes.  
+The denominator polynomial of an n-th order Butterworth filter uses coefficients derived from <b>Pascal’s triangle</b> to ensure a maximally flat magnitude response.</p>
+
+<hr/>
+
+<h2>📘 Prototype Circuit (Normalized Low-Pass)</h2>
+
+<p>A Butterworth prototype is a <b>normalized filter</b> with:</p>
+
+<ul>
+  <li>Source impedance = <b>1 Ω</b></li>
+  <li>Load impedance = <b>1 Ω</b></li>
+  <li>Cutoff frequency = <b>1 rad/sec</b></li>
+</ul>
+
+<p>After designing the normalized circuit, we scale it for:</p>
+
+<ul>
+  <li>Desired cutoff frequency (frequency scaling)</li>
+  <li>Desired real-world impedance (impedance scaling)</li>
+</ul>
+
+<img width="527" src="https://github.com/user-attachments/assets/b881f41f-d19b-4cc0-ab19-510c4ee8620c" />
+
+<hr/>
+
+<h2>🔁 Converting Low-Pass to High-Pass</h2>
+
+<p>You can convert a low-pass prototype to high-pass by swapping series ↔ shunt components:</p>
+
+<ul>
+  <li>Series capacitor becomes series inductor</li>
+  <li>Shunt inductor becomes shunt capacitor</li>
+</ul>
+
+<img width="452" src="https://github.com/user-attachments/assets/aa7b7a6d-428e-432c-81bc-dc66c4c08fdb" />
+
+<h3>❓ Why Does This Work?</h3>
+
+<p>Because the impedance of L and C invert with frequency:</p>
+
+<ul>
+  <li><b>Low-pass</b> passes low frequency → uses <b>capacitors as opens</b> and <b>inductors as shorts</b>.</li>
+  <li><b>High-pass</b> passes high frequency → uses <b>capacitors as shorts</b> and <b>inductors as opens</b>.</li>
+</ul>
+
+<p>Swapping L ↔ C mathematically applies the transform:</p>
+
+<p align="center"><b>s → ω<sub>c</sub>/s</b></p>
+
+<p>which converts an LPF transfer function into an HPF one.</p>
+
+<hr/>
+
+<h2>📊 Example: Scaling Source & Load Impedances</h2>
+
+<img width="523" src="https://github.com/user-attachments/assets/37ac6e32-c18a-4ee8-97b8-28ed95c62400" />
+
+<p>Starting from the 1 Ω prototype, we scale:</p>
+
+<ul>
+  <li><b>Inductors</b> scale by: &nbsp; L' = L × R</li>
+  <li><b>Capacitors</b> scale by: &nbsp; C' = C / R</li>
+  <li><b>Frequency</b> scales by: &nbsp; f' = f × ω<sub>desired</sub></li>
+</ul>
+
+<hr/>
+
+<h2>🎧 Designing a Butterworth Bandpass Filter</h2>
+
+<p>To design a bandpass filter, we must know:</p>
+
+<ul>
+  <li><b>Center frequency (f₀)</b></li>
+  <li><b>Bandwidth (BW)</b></li>
+  <li><b>Source/Load impedance</b> (assumed to be matched)</li>
+</ul>
+
+<img width="555" src="https://github.com/user-attachments/assets/4d9ad2bd-e21c-47c0-9bd5-d1a8a2bfb29d" />
+
+<p>
+Bandpass sections are derived from the low-pass prototype using:
+</p>
+
+<p align="center"><b>s → (s² + ω₀²) / (BW × s)</b></p>
+
+<hr/>
+
+<h2>⛔ Designing a Notch (Band-Stop) Filter</h2>
+
+<img width="554" src="https://github.com/user-attachments/assets/002a185f-5fe6-483c-bbb2-5f74c2d83116" />
+
+<p>A notch filter rejects a narrow band of unwanted frequencies using a parallel or series LC tuned to the notch frequency.</p>
+
+<p align="center"><b>Notch frequency: ω₀ = 1 / √(LC)</b></p>
+
+<hr/>
+
+<h2>⚠️ Important Assumption for All Filter Designs</h2>
+
+<p>
+For all Butterworth LP, HP, BP, and notch filters, we assume:
+</p>
+
+<ul>
+  <li><b>Source impedance = Load impedance</b></li>
+  <li>Impedances are <b>matched</b> unless stated otherwise</li>
+</ul>
+
+<p>This ensures maximum power transfer and correct filter behavior.</p>
+
+<hr/>
+
+<h2 align="center">📄 Summary</h2>
+
+<ul>
+  <li>Butterworth filters offer a maximally flat response using well-defined pole locations.</li>
+  <li>Series-fed used for low source impedance; shunt-fed for high load impedance.</li>
+  <li>The Butterworth polynomial follows Pascal’s triangle.</li>
+  <li>Prototype circuits use 1 Ω and 1 rad/sec for easy frequency/impedance scaling.</li>
+  <li>Low-pass → High-pass transformation works by swapping L ↔ C.</li>
+  <li>Bandpass and notch filters are created from LP prototypes using mathematical transforms.</li>
+  <li>All filter designs assume matched source and load impedances.</li>
+</ul>
+
 
