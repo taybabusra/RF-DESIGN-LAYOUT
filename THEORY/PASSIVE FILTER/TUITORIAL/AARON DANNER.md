@@ -943,3 +943,173 @@ A **smaller load resistance shifts the pole to the RIGHT** (higher frequency).
 </ul>
 
 <hr>
+
+
+<h1 align="center">📘 Lecture 8: All About the Quality Factor (Q) in Circuits</h1>
+<hr>
+
+<h2>❓ Q: Can we have a band-pass filter without using L and C?</h2>
+<p><b>Yes.</b> Band-pass filters can be made using:</p>
+<ul>
+  <li><b>Active RC filters</b> (using op-amps)</li>
+  <li><b>Gm-C filters</b> (in IC design)</li>
+  <li><b>Digital band-pass filters</b> (DSP)</li>
+  <li><b>Transmission-line based filters</b> at RF (distributed elements behave like L and C)</li>
+</ul>
+
+<p><b>But:</b> Even when L and C are not physically present, their <i>behavior</i> is created using resistors, capacitors, op-amps, or transmission-line effects.</p>
+
+<hr>
+
+<h2>🧮 Why is Q defined as <code>Q = (1/R) √(L/C)</code>?</h2>
+
+<p>This formula comes from analyzing a <b>series RLC resonator</b>.  
+At resonance:</p>
+
+<ul>
+  <li>Energy oscillates between L and C</li>
+  <li>R determines how fast the oscillation dies out</li>
+</ul>
+
+<p>The formal definition:</p>
+
+<p align="center"><b>Q = 2π × (Energy stored / Energy lost per cycle)</b></p>
+
+<p>For a series RLC:</p>
+
+<p align="center"><b>Q = ω₀L / R = 1/R √(L/C)</b></p>
+
+<p>This tells us:</p>
+<ul>
+  <li>Higher L → more stored magnetic energy → higher Q</li>
+  <li>Lower C → more voltage swing → higher Q</li>
+  <li>Higher R → more loss → lower Q</li>
+</ul>
+
+<hr>
+
+<h1>📡 Shunt-Fed Band-Pass Filter</h1>
+
+<img width="298" src="https://github.com/user-attachments/assets/b3574c43-c51c-43a0-81ce-52a70dab98f2" />
+
+<p>Unlike the series RLC, this topology has a <b>different equation for Q</b>.</p>
+
+<ul>
+  <li>The <b>physical meaning</b> of Q is always the same.</li>
+  <li>The <b>mathematical expression</b> for Q depends on the circuit topology.</li>
+</ul>
+
+<hr>
+
+<h2>🔄 Loaded Q vs Unloaded Q</h2>
+
+<img width="573" src="https://github.com/user-attachments/assets/dbcf850b-420e-4b0c-ac91-cf8ef9932b99" />
+
+<h3>📌 Loaded Q</h3>
+<ul>
+  <li>Occurs when a <b>load resistance draws power</b> from the resonator</li>
+  <li>Load reduces Q (more energy loss per cycle)</li>
+  <li>Bandwidth becomes <b>wider</b></li>
+</ul>
+
+<h3>📌 Unloaded Q</h3>
+<ul>
+  <li>Only internal series or parallel resistance contributes to loss</li>
+  <li>No external loading</li>
+  <li>Shows the <b>maximum Q</b> the resonator can achieve</li>
+</ul>
+
+<hr>
+
+<h1>📉 Relation Between Q and Filter Frequency Response</h1>
+
+<p>Q is determined from the <b>transfer function poles</b>:</p>
+
+<p align="center"><b>Q = ω₀ / (2ζ)</b></p>
+
+<p>It can also be found using the frequency response:</p>
+
+<p align="center"><b>Q = f₀ / (f₂ − f₁)</b></p>
+
+<p>Where:</p>
+<ul>
+  <li><b>f₀</b> = center frequency</li>
+  <li><b>f₂ − f₁</b> = −3 dB bandwidth</li>
+</ul>
+
+<img width="571" src="https://github.com/user-attachments/assets/9582d2e9-5895-4869-b2d1-5445d33e25b2" />
+
+<h3>Interpretation:</h3>
+<ul>
+  <li>High Q → narrow, sharp peak → high selectivity</li>
+  <li>Low Q → wide bandwidth → less selective</li>
+</ul>
+
+<hr>
+
+<h1>🧰 Black-Box Method to Find Q</h1>
+
+<ul>
+  <li>Look at the <b>frequency response curve</b></li>
+  <li>Find the peak frequency <b>f₀</b></li>
+  <li>Find the −3 dB points <b>f₁</b> and <b>f₂</b></li>
+</ul>
+
+<p align="center"><b>Q = f₀ / (f₂ − f₁)</b></p>
+
+<p>This works even if:</p>
+<ul>
+  <li>You don’t know the circuit topology</li>
+  <li>You don’t know the internal L, C, or R</li>
+</ul>
+
+<hr>
+
+<h2>❓ What Are Negative Frequencies?</h2>
+
+<p><b>Negative frequencies are a mathematical concept</b> used in Fourier analysis.</p>
+
+<ul>
+  <li>They represent the direction of rotation in the complex plane</li>
+  <li>They do <b>not</b> have independent physical existence</li>
+  <li>They help describe real signals using sine + cosine components</li>
+</ul>
+
+<p>In RF and DSP, negative frequencies are extremely useful for:</p>
+<ul>
+  <li>IQ modulation</li>
+  <li>Complex baseband modeling</li>
+  <li>Hilbert transforms</li>
+</ul>
+
+<hr>
+
+<h1>🧾 How to Determine Q from the Transfer Function</h1>
+
+<p>If your TF denominator has the form:</p>
+
+<p align="center"><b>s² + (ω₀/Q)s + ω₀²</b></p>
+
+<p>Then Q is directly the coefficient:</p>
+
+<p align="center"><b>Q = ω₀ / damping term</b></p>
+
+<p>This is why knowing the transfer function makes it straightforward to calculate Q.</p>
+
+<img width="571" src="https://github.com/user-attachments/assets/04f84871-3723-470b-8a2d-fee1c5b66aaa" />
+
+<hr>
+
+<h1>📄 Summary</h1>
+
+<ul>
+  <li>Band-pass filters can exist without physical L or C (e.g., active RC, DSP filters).</li>
+  <li>Q = (1/R)√(L/C) comes from energy-loss analysis in a resonator.</li>
+  <li>Each topology has its own Q expression, but the physical meaning is universal.</li>
+  <li>Loaded Q < Loaded Q, because external load reduces selectivity.</li>
+  <li>Q is tied to both pole locations and bandwidth around the center frequency.</li>
+  <li>Negative frequencies are mathematical tools used in signal processing.</li>
+  <li>Q can be read directly from the standard transfer function form.</li>
+</ul>
+
+<hr>
