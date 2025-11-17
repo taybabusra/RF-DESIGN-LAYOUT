@@ -793,6 +793,153 @@ A **smaller load resistance shifts the pole to the RIGHT** (higher frequency).
 - Matching **time constants** makes RC, RL, and LC filters behave identically.  
 - Adding a load resistor modifies the effective resistance → moving the pole.  
 - **Higher load resistance → pole shifts left (lower cutoff)**  
-- **Lower load resistance → pole shifts right (higher cutoff)**  
+- **Lower load resistance → pole shifts right (higher cutoff)**
 
 
+<h1 align="center">📘 Lecture 7: All About the 2-Pole RLC Passive Filter</h1>
+
+<hr>
+
+<h2>⭐ Why Do We Need Multi-Pole Systems?</h2>
+
+<p>A <b>single-pole (1st-order) filter</b> provides:</p>
+<ul>
+  <li>Only one cutoff frequency</li>
+  <li>Slow roll-off (−20 dB/dec)</li>
+  <li>No ability to create a band-pass or band-stop response</li>
+</ul>
+
+<p>Modern RF/analog circuits require:</p>
+<ul>
+  <li>Sharper filtering</li>
+  <li>Higher selectivity</li>
+  <li>Resonant behavior</li>
+  <li>Control over both low & high frequency limits</li>
+</ul>
+
+<p>➡️ <b>A band-pass filter requires at least two poles.</b></p>
+
+<hr>
+
+<h2>🆚 When to Choose Single-Pole vs Multi-Pole?</h2>
+
+<h3>✔ Single-Pole (1st Order)</h3>
+<p>Use when:</p>
+<ul>
+  <li>Simple LPF/HPF is enough</li>
+  <li>No sharp selectivity needed</li>
+  <li>Used for bias networks, DC blocking, simple conditioning</li>
+</ul>
+
+<h3>✔ Multi-Pole (2nd Order or Higher)</h3>
+<p>Use when:</p>
+<ul>
+  <li>Band-pass or notch filtering is required</li>
+  <li>Sharper roll-off (−40 dB/dec for 2 poles)</li>
+  <li>Resonance or narrow bandwidth is needed</li>
+  <li>Used in RF, IF filters, LNAs, mixers, matching networks</li>
+</ul>
+
+<hr>
+
+<h1>🎛 Understanding the 2-Pole LRC Filter</h1>
+
+<p>An RLC circuit has <b>two reactive components</b>, giving a <b>2-pole response</b> defined by:</p>
+
+<ul>
+  <li><b>ω₀</b> — resonant frequency</li>
+  <li><b>Q</b> — quality factor (selectivity)</li>
+</ul>
+
+<p>You can take the output across:</p>
+<ul>
+  <li><b>Capacitor</b> → Low-Pass (2 poles, 0 zeros)</li>
+  <li><b>Inductor</b> → High-Pass (2 poles, 2 zeros)</li>
+  <li><b>Resistor</b> → Band-Pass (2 poles, 1 zero)</li>
+</ul>
+
+<img width="467" src="https://github.com/user-attachments/assets/6bb85ada-97b1-473a-8d4f-7cf79eec98af" />
+<img width="468" src="https://github.com/user-attachments/assets/d503b296-e96a-441d-bdc9-4b8a3273fc5f" />
+<img width="468" src="https://github.com/user-attachments/assets/7b59043f-15f1-4db5-95a4-01f548f2a91c" />
+
+<hr>
+
+<h1>🎚 Understanding the Quality Factor (Q)</h1>
+
+<p>The <b>Q-factor</b> determines:</p>
+<ul>
+  <li>Sharpness of resonance</li>
+  <li>Bandwidth of band-pass filters</li>
+  <li>Peaking in LPF/HPF</li>
+  <li>Damping of the system</li>
+</ul>
+
+<h3>Higher Q →</h3>
+<ul>
+  <li>Sharper peak</li>
+  <li>Narrower bandwidth</li>
+  <li>More selective filtering</li>
+</ul>
+
+<h3>Lower Q →</h3>
+<ul>
+  <li>More damping</li>
+  <li>Wider bandwidth</li>
+  <li>Less peaking</li>
+</ul>
+
+<h2>📉 LPF and HPF Responses with Q</h2>
+
+<img width="467" src="https://github.com/user-attachments/assets/aa3b373a-b333-40ed-adf2-2150c7f5b6b4" />
+<img width="467" src="https://github.com/user-attachments/assets/734f6765-d7e1-435e-9d55-1b8b6544542d" />
+
+<hr>
+
+<h1>📦 Other 2-Pole Topologies</h1>
+
+<h3>📌 Series-Fed Band-Pass</h3>
+<img width="467" src="https://github.com/user-attachments/assets/b0bdb509-5925-4c02-929c-4ba35a2018b0" />
+
+<h3>📌 Shunt-Fed Band-Pass</h3>
+<img width="166" src="https://github.com/user-attachments/assets/505af8b0-cdb8-4bf3-9181-752cc9006ccc" />
+
+<hr>
+
+<h1>🎯 What Are Notch Filters?</h1>
+
+<p>A <b>notch filter</b> (band-stop filter) suppresses a <b>very narrow frequency band</b> while passing all other frequencies.</p>
+
+<h3>🔧 Applications:</h3>
+<ul>
+  <li>Eliminating interference</li>
+  <li>Removing 50/60 Hz hum</li>
+  <li>EMI/RFI suppression</li>
+  <li>RF tone rejection</li>
+  <li>Receiver & mixer filtering</li>
+</ul>
+
+<p>Yes — <b>notch filters are widely used in RF systems.</b></p>
+
+<h3>📡 Why does a notch look like S11?</h3>
+<p>Because S11 dips when:</p>
+<ul>
+  <li>Impedance becomes extreme (very high or very low)</li>
+  <li>Reflection decreases</li>
+  <li>Energy is absorbed or diverted</li>
+</ul>
+
+<img width="274" src="https://github.com/user-attachments/assets/2ffa79bb-14ac-4636-bf75-784312635f22" />
+
+<hr>
+
+<h1>📝 Summary</h1>
+
+<ul>
+  <li>Single-pole filters are simple but cannot create band-pass or notch responses.</li>
+  <li>Two-pole RLC filters allow resonance, sharp roll-off, and selective filtering.</li>
+  <li>Output across C → LPF, L → HPF, R → BPF.</li>
+  <li>Q-factor controls sharpness and bandwidth.</li>
+  <li>Notch filters are essential in RF for interference rejection.</li>
+</ul>
+
+<hr>
