@@ -709,4 +709,90 @@ These ensure:
   - RF buffer amplifiers  
 - Buffer ≠ Repeater — buffers isolate, repeaters amplify  
 
+
+<h1 align="center">📘 Lecture 6: 1-Pole Low-Pass Filter — Examples & Common Problems</h1>
+
+## 🧩 Problem 1: Identifying Low-Pass vs High-Pass Filters
+
+A quick trick:
+
+- **High frequencies** → pass through the capacitor to **ground**  
+- **Low frequencies** → stay at the output  
+- Therefore → **Low-Pass Filter (LPF)**
+
+<img width="471" src="https://github.com/user-attachments/assets/dfac81e0-2279-478e-887c-aa0b239a9bff" />
+
+<img width="467" src="https://github.com/user-attachments/assets/2bb89f59-57f3-45d6-a2a8-29267279c490" />
+
+### ✔️ Interpretation
+- At **high frequency**, capacitor impedance is **very small**, acting like a short → signal goes to **ground**.
+- At **low frequency**, capacitor impedance is **large**, so the signal remains at the **output**.
+
+Thus, the circuit behaves as a **1-pole low-pass filter**.
+
 ---
+
+## 🧩 Problem 2: Matching Responses Across Filter Types
+
+To obtain **identical frequency response**, the **time constant** must match:
+
+\[
+RC = \frac{L}{R} = \frac{L}{C}
+\]
+
+This is why RC, RL, and LC filters can be compared by ensuring equal time constants.
+
+<img width="394" src="https://github.com/user-attachments/assets/c04c0ddb-2196-4177-b476-fc3193584d3f" />
+
+### ✔️ Why this matters
+- The **corner frequency** of any 1-pole filter is governed by its **time constant**.
+- Matching τ ensures:
+  - Same −3 dB frequency  
+  - Same roll-off  
+  - Same phase behavior  
+
+---
+
+## 🧩 Problem 3: Effect of Load Resistance on the Pole Location
+
+When a load resistor is attached:
+
+<img width="473" src="https://github.com/user-attachments/assets/90196cea-2f8b-44d8-b99f-85fd8290cb7f" />
+
+### ✔️ Key Principle
+A **smaller load resistor** draws **more current**, which effectively **reduces** the resistance seen by the capacitor.
+
+This causes:
+
+\[
+\tau = R_{\text{eq}}C
+\]
+
+to become **smaller**, and therefore the **corner frequency increases**:
+
+\[
+\omega_c = \frac{1}{\tau} = \frac{1}{R_{\text{eq}}C}
+\]
+
+### ❓ So does a higher load shift the pole left or right?
+
+| Load Resistance | Time Constant | Corner Frequency | Pole Movement |
+|----------------|---------------|------------------|---------------|
+| **Large load (high R)** | Large τ | **Lower** ωc | **Pole shifts LEFT** (towards low frequency) |
+| **Small load (low R)** | Small τ | **Higher** ωc | **Pole shifts RIGHT** (towards high frequency) |
+
+### ✔️ Answer:
+A **higher load resistance shifts the pole to the LEFT** (lower frequency).  
+A **smaller load resistance shifts the pole to the RIGHT** (higher frequency).
+
+---
+
+## 📄 Summary
+
+- LPF can be identified by observing how a capacitor reacts to different frequencies.  
+- Matching **time constants** makes RC, RL, and LC filters behave identically.  
+- Adding a load resistor modifies the effective resistance → moving the pole.  
+- **Higher load resistance → pole shifts left (lower cutoff)**  
+- **Lower load resistance → pole shifts right (higher cutoff)**  
+
+
