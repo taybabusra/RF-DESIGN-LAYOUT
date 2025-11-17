@@ -548,3 +548,122 @@ Thus:
 
 ---
 
+<h1 align="center">📘 Lecture 4: Problems for 1-Pole Filters with Design Freedom</h1>
+
+## 🔄 Tau (τ) vs. Period (T): Why the Confusion?
+- **τ (Time Constant)** → Defines how fast a 1-pole filter responds.  
+  \[
+  \tau = RC \quad \text{or} \quad \tau = \frac{L}{R}
+  \]
+- **T (Period)** → The time taken for one full cycle of a waveform.  
+  \[
+  T = \frac{1}{f}
+  \]
+
+Both have the unit **seconds**, but their meaning is different:
+- τ = system response time  
+- T = input signal time cycle  
+
+---
+
+## 🧪 Design 1: Effect of Load on Corner Frequency
+
+<img width="443" height="215" src="https://github.com/user-attachments/assets/49dc2a88-3c94-44d2-869d-5f754c905fa3" />
+
+Here:
+- R is in the **10 kΩ range**, which is reasonable.
+- If the **load resistance is very large** (hundreds of kΩ or MΩ),
+  then the voltage divider effect becomes negligible.
+- Therefore, **corner frequency stays unchanged**.
+
+**Key Idea:**  
+A 1-pole filter behaves ideally when load resistance ≫ filter resistance.
+
+---
+
+## 🧪 Design 2: High-Frequency Realities – Lumped vs Distributed Networks
+
+<img width="428" height="149" src="https://github.com/user-attachments/assets/78e32f8d-2bec-4f22-a824-35030f009e95" />
+
+At very high frequencies:
+- Components become electrically **smaller**.
+- Wires, PCB traces, and even device packages start to behave like:
+  - inductors  
+  - capacitors  
+  - transmission lines  
+
+This is where the idea of:
+- **Lumped elements** (ideal R, L, C)
+- **Distributed elements** (transmission line behavior)
+
+becomes important.
+
+**Rule of Thumb:**  
+If the physical length is **≥ λ/20**, treat the network as **distributed**.
+
+---
+
+## 🧪 Design 3: Inductor in Series — Why It Blocks High Frequencies?
+
+### 🌀 Impedance of an Inductor
+\[
+Z_L = j\omega L
+\]
+
+- At **low frequency** (ω ≈ 0)  
+  \[
+  Z_L \to 0 \quad (\text{acts like a short})
+  \]  
+  DC passes easily → inductor is “invisible”.
+
+- At **high frequency** (ω → large)  
+  \[
+  Z_L \to \infty \quad (\text{acts like an open})
+  \]  
+  AC at high frequency is **blocked**.
+
+### ❓ Does noise have higher frequencies?
+**Yes.**  
+Most unwanted noise sources (switching noise, digital edges, EMI) have **much higher frequency content** than the main signal.
+
+### 📌 Real-Life Use: Choke
+<img width="451" height="111" src="https://github.com/user-attachments/assets/fb248105-5f7a-451b-aa64-520aa4dcc078" />
+
+A **high-frequency choke** is placed in series with the power line to:
+- Block high-frequency noise  
+- Allow DC to pass into the circuit  
+
+This is exactly the use-case of a **1-pole RL high-pass and low-pass behavior**.
+
+---
+
+## 🧪 Design 4: Capacitor Blocking DC
+
+<img width="368" height="102" src="https://github.com/user-attachments/assets/d106b67a-2e4e-474e-90b4-21e0af15f56e" />
+
+Two parallel plates separated by a dielectric:
+- Are **not touching** → **no DC conduction**
+- But they **do allow AC** due to displacement current:
+
+\[
+i_C = C \frac{dv}{dt}
+\]
+
+- High frequency → large \( \frac{dv}{dt} \) → AC passes  
+- DC → \( \frac{dv}{dt} = 0 \) → no current
+
+**Thus, capacitors block DC and pass AC.**
+
+---
+
+## 📄 Summary
+
+| Concept | Explanation |
+|--------|-------------|
+| **τ vs T** | τ = time constant of the system, T = waveform period |
+| **Filter + Load** | High load resistance prevents corner frequency shifts |
+| **High-frequency design** | Lumped → low frequency, Distributed → high frequency |
+| **Inductor in series** | Passes DC, blocks high-frequency noise |
+| **Capacitor block DC** | No direct path → only AC displacement current |
+
+---
