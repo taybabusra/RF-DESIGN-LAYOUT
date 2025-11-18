@@ -1494,20 +1494,110 @@ For all Butterworth LP, HP, BP, and notch filters, we assume:
   <li>All filter designs assume matched source and load impedances.</li>
 </ul>
 
-<h1 align="center">📘 Lecture 11: Impedance matching in filter circuit</h1>
-Q: When we say that source impedance and load impedance is matched what does we mean? 
-<img width="517" height="245" alt="image" src="https://github.com/user-attachments/assets/1602ab43-d5b6-4a76-ab3b-aeaae9b70aca" />
+<h1 align="center">📘 Lecture 11: Impedance Matching in Filter Circuits</h1>
 
-# Matching (IMPEDANCE MATCHING)
+<h2>🔍 What Does “Source Impedance and Load Impedance Are Matched” Mean?</h2>
+<p>
+Impedance matching means the source impedance (<b>Z<sub>S</sub></b>) and load impedance 
+(<b>Z<sub>L</sub></b>) are equal in magnitude. When matched:
+</p>
+<ul>
+  <li>Maximum power is transferred</li>
+  <li>No reflections occur (in RF networks / transmission lines)</li>
+  <li>The designed filter response (poles, zeros) stays accurate</li>
+</ul>
 
-1. Adding a resistor:
-   <img width="543" height="295" alt="image" src="https://github.com/user-attachments/assets/a30e232d-9279-49a7-a10b-a19721b863eb" />
- Adding resistor is not a desired option we are looking for as adding resistor there will be a lot of power loss
- <img width="524" height="281" alt="image" src="https://github.com/user-attachments/assets/2ac95fb2-df7d-4a23-a432- 7e4969701da0" />
+<p align="center">
+  <img width="517" height="245" src="https://github.com/user-attachments/assets/1602ab43-d5b6-4a76-ab3b-aeaae9b70aca" />
+</p>
 
-2. Transformer for impedance matching:
-<img width="528" height="251" alt="image" src="https://github.com/user-attachments/assets/bcbc71c1-5d76-45f2-986b-be8d0ce7fe20" />
-this cann't always be the option as the transformer tend to be bulky expensive and thy burn up little bit of power so this is not always the preferered option.
-3. L- section impedance matching:
-it's defining as simply adding an inductr and capacitor pair to the filter circuit in order to correct an imbalance of load and source impedance effectively
-  
+<hr/>
+
+<h2>⚡ Impedance Matching Techniques</h2>
+
+<h3>1️⃣ Adding a Resistor (Simple but Undesirable)</h3>
+<p align="center">
+  <img width="543" height="295" 
+       src="https://github.com/user-attachments/assets/a30e232d-9279-49a7-a10b-a19721b863eb" />
+</p>
+
+<ul>
+  <li>Easy to implement</li>
+  <li><b>Very inefficient</b> — results in significant power loss</li>
+  <li>Not suitable for RF or high-performance filter design</li>
+</ul>
+
+<p align="center">
+  <img width="524" height="281" 
+       src="https://github.com/user-attachments/assets/2ac95fb2-df7d-4a23-a432-7e4969701da0" />
+</p>
+
+<hr/>
+
+<h3>2️⃣ Transformer Matching</h3>
+<p align="center">
+  <img width="528" height="251" 
+       src="https://github.com/user-attachments/assets/bcbc71c1-5d76-45f2-986b-be8d0ce7fe20" />
+</p>
+
+<ul>
+  <li>Provides excellent matching</li>
+  <li>High bandwidth & low loss if designed correctly</li>
+  <li><b>But drawbacks:</b>
+    <ul>
+      <li>Bulky</li>
+      <li>Expensive</li>
+      <li>Can burn power at high frequency</li>
+      <li>Not suitable inside ICs</li>
+    </ul>
+  </li>
+</ul>
+
+<hr/>
+
+<h3>3️⃣ L-Section Impedance Matching (Most Common in RF Filter Design)</h3>
+<p>
+An <b>L-section</b> uses one inductor and one capacitor to convert the load impedance to the required value.
+</p>
+
+<ul>
+  <li>Simple and effective</li>
+  <li>Very common in RF / microwave filter chains</li>
+  <li>Provides high efficiency</li>
+  <li>Introduces <b>two extra poles</b> in the circuit</li>
+</ul>
+
+<p align="center">
+  <img width="489" height="265" 
+       src="https://github.com/user-attachments/assets/7fc84947-bfba-4c14-a4f4-9f870732117f" />
+</p>
+
+<h3>📌 How to Choose L & C Values?</h3>
+<p>
+This depends on the signs of the required reactances:
+</p>
+
+<ul>
+  <li><b>Positive X₁ → Negative X₂</b> → First component = Inductor (L), second = Capacitor (C)</li>
+  <li><b>Negative X₁ → Positive X₂</b> → First component = Capacitor (C), second = Inductor (L)</li>
+</ul>
+
+<p><b>Important:</b>  
+These L and C values work perfectly only at one specific design frequency (ω₀).  
+Matching bandwidth is limited.</p>
+
+<hr/>
+
+<h2>📘 Summary</h2>
+<ul>
+  <li>Impedance matching ensures maximum power transfer and proper filter behavior.</li>
+  <li>Resistor matching: easy but extremely lossy — rarely used.</li>
+  <li>Transformer matching: good but bulky and not IC-friendly.</li>
+  <li>L-section matching: most widely used in RF circuits; minimal components and high efficiency.</li>
+  <li>Matching networks introduce extra poles that may change filter characteristics.</li>
+  <li>Matching works optimally only at the designed operating frequency.</li>
+</ul>
+
+
+
+<h1 align="center">📘 Lecture 12: 2-pole filter example problems</h1>
