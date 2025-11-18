@@ -1600,4 +1600,117 @@ Matching bandwidth is limited.</p>
 
 
 
-<h1 align="center">📘 Lecture 12: 2-pole filter example problems</h1>
+<h1 align="center">📘 Lecture 12: 2-Pole Filter Example Problems</h1>
+
+<hr/>
+
+<h2>🧩 Problem 1: Series-Fed Bandpass Filter</h2>
+<p>
+In a series-fed bandpass structure:
+</p>
+<ul>
+  <li><b>Low frequencies</b> see a <b>large impedance</b> from inductors</li>
+  <li><b>High frequencies</b> see a <b>small impedance</b></li>
+  <li>A bandpass shape is formed when L and C work together</li>
+</ul>
+
+<p align="center">
+  <img width="506" height="284" 
+       src="https://github.com/user-attachments/assets/766796ac-837f-4970-911c-3e8470b9affd" />
+</p>
+
+<hr/>
+
+<h2>🧩 Problem 2</h2>
+
+<p align="center">
+  <img width="506" height="283" 
+       src="https://github.com/user-attachments/assets/32ea8d53-e15d-4321-acd6-dc4a5a287caf" />
+</p>
+
+<p>
+This example shows how pole placement affects the behavior of a 2-pole passive network.
+</p>
+
+<hr/>
+
+<h2>🧩 Problem 3: LC Network Behavior</h2>
+
+<p align="center">
+  <img width="498" height="271" 
+       src="https://github.com/user-attachments/assets/a7c8ed7c-f839-4903-a84e-65d7140afd59" />
+</p>
+
+<h3>📌 Key Insight</h3>
+<p>
+For an LC resonator:
+</p>
+<ul>
+  <li>The <b>distance of a pole from the origin</b> determines the resonant frequency <b>ω₀</b></li>
+  <li>A pure LC network is a <b>resonator</b> — not explicitly LPF or HPF</li>
+  <li>It has a natural oscillation frequency where energy cycles between L and C</li>
+</ul>
+
+<hr/>
+
+<h2>❓ Q: Does an LC Network Used in Matching Define Low-Pass or High-Pass Filtering?</h2>
+
+<h3>✔ Short Answer: No — an LC matching network does NOT behave as a standalone LPF/HPF.</h3>
+
+<h3>✔ Why?</h3>
+<p>
+When inductors and capacitors are used <b>for matching</b>:
+</p>
+<ul>
+  <li>The goal is not to filter signals</li>
+  <li>They are designed to <b>transform impedances</b></li>
+  <li>Their behavior resembles a <b>resonant impedance transformer</b>, not a filter</li>
+</ul>
+
+<h3>✔ What are they individually?</h3>
+
+<table>
+  <tr>
+    <th>LC Use-Case</th>
+    <th>Behavior</th>
+    <th>Function in Matching</th>
+  </tr>
+  <tr>
+    <td><b>Series LC</b></td>
+    <td>Acts like a <b>short at resonance</b></td>
+    <td>Passes a narrow band → transforms impedance at ω₀</td>
+  </tr>
+  <tr>
+    <td><b>Parallel LC</b></td>
+    <td>Acts like an <b>open at resonance</b></td>
+    <td>Blocks a narrow band → defines impedance peak at ω₀</td>
+  </tr>
+  <tr>
+    <td><b>L-section (L + C)</b></td>
+    <td>Not a filter by itself; bandwidth too small</td>
+    <td>Transforms R<sub>L</sub> ↔ R<sub>S</sub>, sets Q</td>
+  </tr>
+</table>
+
+<h3>📌 Final Interpretation</h3>
+<p>
+When LC networks appear inside a matching circuit:
+</p>
+<ul>
+  <li>They are <b>impedance transformers</b></li>
+  <li>They may look like LPF or HPF topologies but <b>their purpose is matching, not filtering</b></li>
+  <li>The resonant frequency determines where the matching is valid</li>
+  <li>The “filter shape” is only a side effect, not the objective</li>
+</ul>
+
+<hr/>
+
+<h2>📘 Summary</h2>
+<ul>
+  <li>2-pole LC networks behave as resonators with poles symmetric around imaginary axis.</li>
+  <li>An LC matching network does not define LPF/HPF characteristics by itself.</li>
+  <li>Series LC → acts as short at resonance; Parallel LC → acts as open at resonance.</li>
+  <li>When used for matching, LC elements serve as <b>impedance transformers</b>, not filters.</li>
+  <li>Matching works at one specific frequency determined by the LC resonant point.</li>
+</ul>
+
