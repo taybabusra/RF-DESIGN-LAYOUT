@@ -1714,3 +1714,13 @@ When LC networks appear inside a matching circuit:
   <li>Matching works at one specific frequency determined by the LC resonant point.</li>
 </ul>
 
+<h1 align="center">📘 Lecture 13: Detailed L-section impedance matching example</h1>
+
+<img width="506" height="285" alt="image" src="https://github.com/user-attachments/assets/4b13c3a8-fe69-47af-8d1e-cc28eb03e709" />
+
+<h1 align="center">📘 Lecture 14: Butterworth Filter Design Examples </h1>
+
+<img width="490" height="267" alt="image" src="https://github.com/user-attachments/assets/30a8855e-ca0a-47cb-9760-1bdd71699b50" />
+<img width="483" height="265" alt="image" src="https://github.com/user-attachments/assets/ec57bb99-6886-44e1-838f-779c298b63dd" />
+
+
