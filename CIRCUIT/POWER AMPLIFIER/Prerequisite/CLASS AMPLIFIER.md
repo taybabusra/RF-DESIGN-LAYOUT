@@ -256,5 +256,6 @@ I<sub>C</sub> = β I<sub>B</sub>
 </ul>
 
 <hr>
-<p align="center"><b>✔ This file is fully ready for GitHub README.md ✔</b></p>
+
+<p align="center"><b>2nd source of opinione</b></p>
 
