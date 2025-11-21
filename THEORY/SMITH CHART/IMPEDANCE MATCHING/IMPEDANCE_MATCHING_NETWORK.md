@@ -207,6 +207,70 @@ Which Q is higher depends on goals: if you need high efficiency/selectivity, the
     <li>For narrowband high-Q needs, use π or T networks because they provide Q flexibility and additional control over selectivity and harmonic suppression.</li>
     <li>For wideband (low Q) matching, use multiple cascaded L-sections (successive matching) or broadband matching topologies.</li>
   </ul>
+
+
+
+  <!-- Bilateral Matching Explanation (paste into README.md) -->
+<section id="bilateral-matching" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height:1.45; color:#222;">
+  <header style="border-bottom:1px solid #e6e6e6; padding-bottom:12px; margin-bottom:16px;">
+    <h2 style="margin:0 0 6px 0; font-weight:600; color:#3b2b8f;">Why input/output change when you match only one side</h2>
+    <p style="margin:0; color:#555;">Short, intuitive and theoretical explanation for bilateral devices (S<sub>12</sub> ≠ 0).</p>
+  </header>
+
+  <figure style="margin:0 0 18px 0;">
+    <img src="/mnt/data/7fb0eb68-8b71-452c-a1a4-724a8816d387.png" alt="Simultaneous Matching Method" style="max-width:100%; height:auto; border:1px solid #eee; border-radius:6px;">
+    <figcaption style="font-size:0.9rem; color:#666; margin-top:6px;">Slide: Simultaneous Matching Method (S<sub>12</sub> ≠ 0)</figcaption>
+  </figure>
+
+  <section style="margin-bottom:12px;">
+    <h3 style="margin:0 0 8px 0; font-size:1.05rem; color:#2b2b2b;">Summary</h3>
+    <p style="margin:0; color:#444;">
+      Most RF transistors are <strong>bilateral</strong> (reverse coupling exists), so input and output are <em>coupled</em>.
+      Changing the matching network on one side alters the reflection seen by the other side, so the other side’s impedance changes too.
+    </p>
+  </section>
+
+  <section style="margin-bottom:12px;">
+    <h3 style="margin:0 0 8px 0; font-size:1.05rem; color:#2b2b2b;">Theoretical view</h3>
+    <p style="margin:0 0 8px 0; color:#444;">
+      For a 2-port network the input reflection is:
+    </p>
+    <pre style="background:#f7f7f7; padding:10px; border-radius:6px; font-size:0.95rem; color:#111; overflow:auto;">
+Γ_in = S11 + (S12·S21·Γ_L) / (1 − S22·Γ_L)
+    </pre>
+    <p style="margin:8px 0 0 0; color:#444;">
+      The second term shows Γ_in depends on Γ_L (the load reflection). So if you change the output match (Γ_L), Γ_in changes.  
+      Similarly Γ_out depends on Γ_S (the source reflection).
+    </p>
+  </section>
+
+  <section style="margin-bottom:12px;">
+    <h3 style="margin:0 0 8px 0; font-size:1.05rem; color:#2b2b2b;">Intuitive analogy</h3>
+    <p style="margin:0; color:#444;">
+      Imagine a gearbox: changing the load on the output shaft feeds back forces into the gearbox and slightly alters the input shaft behaviour.
+      In a bilateral transistor the internal paths provide that feedback — therefore input and output cannot be tuned independently.
+    </p>
+  </section>
+
+  <section style="margin-bottom:14px;">
+    <h3 style="margin:0 0 8px 0; font-size:1.05rem; color:#2b2b2b;">Why simultaneous (bilateral) conjugate matching?</h3>
+    <ul style="margin:0; padding-left:18px; color:#444;">
+      <li>Because Γ_S and Γ_L depend on each other when S<sub>12</sub> ≠ 0.</li>
+      <li>Simultaneous matching solves both reflection equations together so both sides are consistent.</li>
+      <li>Result: input and output appear matched at the same time — tuning one side won't spoil the other.</li>
+    </ul>
+  </section>
+
+  <footer style="border-top:1px solid #eee; padding-top:12px; color:#666; font-size:0.92rem;">
+    <strong>Quick checklist</strong>
+    <ol style="margin:8px 0 0 18px; color:#444;">
+      <li>Check S-parameters (S<sub>11</sub>, S<sub>22</sub>, S<sub>12</sub>, S<sub>21</sub>).</li>
+      <li>If S<sub>12</sub> ≈ 0, you can match sides independently (unilateral case).</li>
+      <li>If S<sub>12</sub> ≠ 0, use simultaneous matching (solve Γ<sub>S</sub> and Γ<sub>L</sub> together).</li>
+    </ol>
+  </footer>
+</section>
+
 </p>
 
 <hr>
