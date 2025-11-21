@@ -211,4 +211,4 @@ Which Q is higher depends on goals: if you need high efficiency/selectivity, the
 
 <hr>
 
-<p align="center"><b>End of notes with questions and answers — ready for README.md</b></p>
+
