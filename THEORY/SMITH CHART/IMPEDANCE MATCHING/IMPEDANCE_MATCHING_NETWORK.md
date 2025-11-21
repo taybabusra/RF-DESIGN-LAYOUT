@@ -204,7 +204,7 @@ Which Q is higher depends on goals: if you need high efficiency/selectivity, the
 
 <hr>
 
-<h2>17. Final summarization (your original bullets)</h2>
+<h2>17. Final summarization</h2>
 
 <p><b>Clarification & guidance:</b>
   <ul>
