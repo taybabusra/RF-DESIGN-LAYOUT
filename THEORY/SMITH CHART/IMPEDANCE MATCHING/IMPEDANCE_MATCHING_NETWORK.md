@@ -1,9 +1,4 @@
 <h1 align="center">📡 Impedance Matching – Notes, Questions & Answers (with Figures)</h1>
-
-<p>
-This document keeps your raw content order, includes all images, and adds clear answers to each question you asked in the notes.
-</p>
-
 <hr>
 
 <h2>1. Why do we need to match impedance?</h2>
