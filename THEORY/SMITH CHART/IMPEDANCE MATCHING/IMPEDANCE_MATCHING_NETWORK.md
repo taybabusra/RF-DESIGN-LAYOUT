@@ -204,16 +204,7 @@ Which Q is higher depends on goals: if you need high efficiency/selectivity, the
 
 <hr>
 
-<h2>17. Final summarization (your original bullets — now answered)</h2>
-
-<p>
-You wrote:
-<ol>
-  <li>Don't bother with the Q of the circuit; you need to use the L</li>
-  <li>Need to specify a narrow Q use a Pi and T</li>
-  <li>Want a wide bandwidth or low Q use a successive network</li>
-</ol>
-</p>
+<h2>17. Final summarization (your original bullets)</h2>
 
 <p><b>Clarification & guidance:</b>
   <ul>
