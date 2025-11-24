@@ -145,3 +145,10 @@
 
 2.Input relation vs gain 
 <img width="892" height="374" alt="image" src="https://github.com/user-attachments/assets/1aee5ba4-33ca-44fc-8c47-1cbd3dfc76ec" />
+3.Output relation vs gain
+<img width="842" height="363" alt="image" src="https://github.com/user-attachments/assets/197c6a4d-5f24-42e9-984e-4d49892246f2" />
+
+4. Input harmonics distortion
+   <img width="424" height="367" alt="image" src="https://github.com/user-attachments/assets/6525bf2c-8678-48db-ab8c-71b6b8ab3b90" />
+   Output harmonics distortion
+   <img width="844" height="380" alt="image" src="https://github.com/user-attachments/assets/b4be8f12-595c-4f99-9c55-04441e08ca09" />
