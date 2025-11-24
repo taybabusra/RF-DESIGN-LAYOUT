@@ -78,3 +78,23 @@
 </ul>
 
 <hr/>
+## Different analyssis result
+
+1.Gmax vs F
+<img width="461" height="293" alt="image" src="https://github.com/user-attachments/assets/cf3e112c-8a6a-4d38-8722-70a9b04dd969" />
+<img width="458" height="289" alt="image" src="https://github.com/user-attachments/assets/ddb1afcd-3ad7-43a1-8a36-a430e740f0de" />
+2. GMSG vs F
+<img width="460" height="290" alt="image" src="https://github.com/user-attachments/assets/b908cac6-1781-4c81-b119-990538d82417" />
+Q: Why then the S21 is not 18.25dB
+3.NFmin vs F
+<img width="461" height="290" alt="image" src="https://github.com/user-attachments/assets/51b6d0f8-45e0-4d20-b680-4eae04f2c9c2" />
+4.NF vs F
+<img width="460" height="292" alt="image" src="https://github.com/user-attachments/assets/569c251a-747e-41a9-bc03-4125330ad98e" />
+
+5.GT vs F
+<img width="466" height="306" alt="image" src="https://github.com/user-attachments/assets/a7899430-78b2-4361-a792-ca4e6fa5aa7c" />
+6.GA vs F
+<img width="461" height="292" alt="image" src="https://github.com/user-attachments/assets/97194cd9-13ac-4890-a1d7-07d1b2bead9d" />
+7. GP vs F
+<img width="460" height="278" alt="image" src="https://github.com/user-attachments/assets/b989c0b4-8cfd-4fd1-8cea-5cd9f50b5d92" />
+Q: without giving anything in the port how come we get the values
