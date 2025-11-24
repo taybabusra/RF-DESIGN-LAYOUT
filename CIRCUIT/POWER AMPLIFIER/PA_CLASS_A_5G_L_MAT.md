@@ -1,101 +1,131 @@
-<h1>5-GHz Power Amplifier Design</h1>
+# 5-GHz Power Amplifier (PA) Design
 
-<hr/>
+---
 
-<h2>1️⃣ Design Specifications</h2>
+## 1️⃣ Design Specifications
 
-<table>
-  <tr><th>Parameter</th><th>Target</th></tr>
-  <tr><td>Supply Current</td><td>≥ 10 mA</td></tr>
-  <tr><td>Power Gain</td><td>10 dB</td></tr>
-  <tr><td>Operating Frequency</td><td>5 GHz</td></tr>
-</table>
+| Parameter          | Target   |
+|------------------|---------|
+| Supply Current    | ≥ 10 mA |
+| Power Gain        | 10 dB   |
+| Operating Frequency | 5 GHz  |
 
-<hr/>
+---
 
-<h2>2️⃣ Device & Circuit Parameters (Before Matching)</h2>
+## 2️⃣ Device & Circuit Parameters (Before Matching)
 
-<table>
-  <tr><th>Parameter</th><th>Value</th></tr>
-  <tr><td>Transistor Width (W)</td><td>1 µm</td></tr>
-  <tr><td>Number of Fingers (M)</td><td>60</td></tr>
-  <tr><td>Source Inductor (L)</td><td>100 nH</td></tr>
-  <tr><td>PA Load Inductor (L<sub>PA</sub>)</td><td>10 nH</td></tr>
-  <tr><td>Bias Inductor</td><td>100 pH</td></tr>
-  <tr><td>Drain Resistance (R)</td><td>360 Ω</td></tr>
-  <tr><td>Gate Bias Voltage (V<sub>BIAS</sub>)</td><td>550 mV</td></tr>
-  <tr><td>Supply Voltage (V<sub>DD</sub>)</td><td>600 mV</td></tr>
-</table>
+| Parameter                | Value       |
+|--------------------------|------------|
+| Transistor Width (W)      | 1 µm       |
+| Number of Fingers (M)     | 60         |
+| Source Inductor (L)       | 100 nH     |
+| PA Load Inductor (L<sub>PA</sub>) | 10 nH |
+| Bias Inductor             | 100 pH     |
+| Drain Resistance (R)      | 360 Ω      |
+| Gate Bias Voltage (V<sub>BIAS</sub>) | 550 mV |
+| Supply Voltage (V<sub>DD</sub>)     | 600 mV |
 
-<hr/>
+---
 
-<h2>3️⃣ Circuit Schematic (Before Matching)</h2>
+## 3️⃣ Circuit Schematic (Before Matching)
 
-<img src="https://github.com/user-attachments/assets/27297d19-31c7-4e5c-ab74-140598e4c589" width="600"/>
+![PA Schematic Before Matching](https://github.com/user-attachments/assets/27297d19-31c7-4e5c-ab74-140598e4c589)
 
-<hr/>
+---
 
-<h2>4️⃣ Simulation Result — Before Matching</h2>
+## 4️⃣ Simulation Result — Before Matching
 
-<img src="https://github.com/user-attachments/assets/1f58641a-2d94-4c44-8de2-d7db7bf1ef1f" width="900"/>
+![Simulation Before Matching](https://github.com/user-attachments/assets/1f58641a-2d94-4c44-8de2-d7db7bf1ef1f)
 
-<p>The circuit is unconditionally stable, but gain is below target due to unmatched input/output.</p>
+> **Observation:** The circuit is unconditionally stable, but gain is below target due to unmatched input/output.
 
-<hr/>
+---
 
-<h2>5️⃣ Input Matching Network</h2>
+## 5️⃣ Input Matching Network
 
-<img src="https://github.com/user-attachments/assets/dba9d82c-3a9d-4ff9-9105-521d2d91e639" width="600"/>
+![Input Matching Network](https://github.com/user-attachments/assets/dba9d82c-3a9d-4ff9-9105-521d2d91e639)
 
-<hr/>
+---
 
-<h2>6️⃣ Output Matching Network</h2>
+## 6️⃣ Output Matching Network
 
-<img src="https://github.com/user-attachments/assets/6da56475-eb55-43af-bd1b-d4004ce0e3a7" width="600"/>
+![Output Matching Network](https://github.com/user-attachments/assets/6da56475-eb55-43af-bd1b-d4004ce0e3a7)
 
-<hr/>
+---
 
-<h2>7️⃣ Final PA Circuit After Matching</h2>
+## 7️⃣ Final PA Circuit After Matching
 
-<img src="https://github.com/user-attachments/assets/57db9f80-2b69-4aca-bfa2-ecaa228a2a41" width="700"/>
+![Final PA Circuit](https://github.com/user-attachments/assets/57db9f80-2b69-4aca-bfa2-ecaa228a2a41)
 
-<hr/>
+---
 
-<h2>8️⃣ Final Simulation — After Matching</h2>
+## 8️⃣ Final Simulation — After Matching
 
-<img src="https://github.com/user-attachments/assets/a7a9771e-412b-42f8-be7b-a73e58abc694" width="700"/>
-<img width="896" height="401" alt="image" src="https://github.com/user-attachments/assets/ff5a6cfe-2dc1-4a9a-bcdd-cd7e81cea892" />
+![Final Simulation](https://github.com/user-attachments/assets/a7a9771e-412b-42f8-be7b-a73e58abc694)
 
-<hr/>
+![S21 Result](https://github.com/user-attachments/assets/ff5a6cfe-2dc1-4a9a-bcdd-cd7e81cea892)
 
-<h2>✅ Summary</h2>
+> **Highlights:**
+> - Input and output are fully complex-conjugate matched.
+> - Final gain meets the 10 dB requirement at 5 GHz.
+> - Stability preserved after matching.
+> - T-network matching (Q = 5) used for both ports.
 
-<ul>
-  <li>Input and output are fully complex-conjugate matched.</li>
-  <li>Final gain meets the 10 dB requirement at 5 GHz.</li>
-  <li>Stability preserved after matching.</li>
-  <li>T-network matching (Q = 5) used for both ports.</li>
-</ul>
+---
 
-<hr/>
-## Different analyssis result
+## 9️⃣ Small-Signal Analysis
 
-1.Gmax vs F
-<img width="461" height="293" alt="image" src="https://github.com/user-attachments/assets/cf3e112c-8a6a-4d38-8722-70a9b04dd969" />
-<img width="458" height="289" alt="image" src="https://github.com/user-attachments/assets/ddb1afcd-3ad7-43a1-8a36-a430e740f0de" />
-2. GMSG vs F
-<img width="460" height="290" alt="image" src="https://github.com/user-attachments/assets/b908cac6-1781-4c81-b119-990538d82417" />
-Q: Why then the S21 is not 18.25dB
-3.NFmin vs F
-<img width="461" height="290" alt="image" src="https://github.com/user-attachments/assets/51b6d0f8-45e0-4d20-b680-4eae04f2c9c2" />
-4.NF vs F
-<img width="460" height="292" alt="image" src="https://github.com/user-attachments/assets/569c251a-747e-41a9-bc03-4125330ad98e" />
+### 9.1 Maximum Gain vs Frequency (G<sub>max</sub>)
 
-5.GT vs F
-<img width="466" height="306" alt="image" src="https://github.com/user-attachments/assets/a7899430-78b2-4361-a792-ca4e6fa5aa7c" />
-6.GA vs F
-<img width="461" height="292" alt="image" src="https://github.com/user-attachments/assets/97194cd9-13ac-4890-a1d7-07d1b2bead9d" />
-7. GP vs F
-<img width="460" height="278" alt="image" src="https://github.com/user-attachments/assets/b989c0b4-8cfd-4fd1-8cea-5cd9f50b5d92" />
-Q: without giving anything in the port how come we get the values
-8.NC 
+![Gmax vs F](https://github.com/user-attachments/assets/cf3e112c-8a6a-4d38-8722-70a9b04dd969)
+
+### 9.2 MSG vs Frequency (G<sub>MSG</sub>)
+
+![GMSG vs F](https://github.com/user-attachments/assets/b908cac6-1781-4c81-b119-990538d82417)
+
+> **Q:** Why is S21 not 18.25 dB?
+
+### 9.3 Minimum Noise Figure (NF<sub>min</sub>) vs Frequency
+
+![NFmin vs F](https://github.com/user-attachments/assets/51b6d0f8-45e0-4d20-b680-4eae04f2c9c2)
+
+### 9.4 Noise Figure (NF) vs Frequency
+
+![NF vs F](https://github.com/user-attachments/assets/569c251a-747e-41a9-bc03-4125330ad98e)
+
+### 9.5 Transducer Gain (G<sub>T</sub>) vs Frequency
+
+![GT vs F](https://github.com/user-attachments/assets/a7899430-78b2-4361-a792-ca4e6fa5aa7c)
+
+### 9.6 Available Gain (G<sub>A</sub>) vs Frequency
+
+![GA vs F](https://github.com/user-attachments/assets/97194cd9-13ac-4890-a1d7-07d1b2bead9d)
+
+### 9.7 Power Gain (G<sub>P</sub>) vs Frequency
+
+![GP vs F](https://github.com/user-attachments/assets/b989c0b4-8cfd-4fd1-8cea-5cd9f50b5d92)
+
+> **Q:** Without connecting anything at the port, how are these values obtained?
+
+### 9.8 Noise Circle (NC) on Smith Chart
+
+![NC Smith Chart](https://github.com/user-attachments/assets/849edb08-1f3e-408e-858b-773941630e8a)
+
+![NC Smith Chart Zoom](https://github.com/user-attachments/assets/c4b62e21-06e5-48c3-9c77-eb3205f2c5f2)
+
+### 9.9 Gain vs F (GAC)
+
+![GAC vs F](https://github.com/user-attachments/assets/... ) <!-- Replace with actual asset -->
+
+### 9.10 Single-Sideband (SSB)
+
+![SSB vs F](https://github.com/user-attachments/assets/ceb992af-57fe-4c8c-8157-8fc655273ecb)
+
+---
+
+## 10️⃣ Notes
+
+- All matching networks are designed to maximize gain and minimize NF.
+- Simulation confirms that PA meets design targets at 5 GHz.
+- Small-signal parameters provide insight into intrinsic transistor behavior.
+
