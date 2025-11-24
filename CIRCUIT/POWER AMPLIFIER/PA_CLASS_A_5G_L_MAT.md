@@ -128,3 +128,20 @@
 - Simulation confirms that PA meets design targets at 5 GHz.
 - Small-signal parameters provide insight into intrinsic transistor behavior.
 
+### HB(HARMONICS BALANCE SIMULATION)
+1.Voltage:
+<img width="155" height="386" alt="image" src="https://github.com/user-attachments/assets/fc106501-d18b-477b-93f8-e46ed9db07f6" />
+<img width="463" height="294" alt="image" src="https://github.com/user-attachments/assets/26ef3b94-0ad2-4cd7-aafb-507262fcbd6f" />
+2.POWER GAIN
+<img width="170" height="374" alt="image" src="https://github.com/user-attachments/assets/e7e26f75-9145-4217-8adf-066a4797c806" />
+<img width="466" height="290" alt="image" src="https://github.com/user-attachments/assets/e54647e0-3634-4a7b-8b29-98b7712f43fd" />
+3.CURRENT GAIN
+
+3.1dB compression point simulation
+---INPUT REFERRED 1dB compression point
+<img width="467" height="294" alt="image" src="https://github.com/user-attachments/assets/895a3e32-1aee-44d4-aac5-c8b97b1a5e07" />
+---OUTPUT REFERRED 1dB compression point
+<img width="464" height="307" alt="image" src="https://github.com/user-attachments/assets/0b039877-66a3-4690-9e06-52b4d433790b" />
+
+2.Input relation vs gain 
+<img width="892" height="374" alt="image" src="https://github.com/user-attachments/assets/1aee5ba4-33ca-44fc-8c47-1cbd3dfc76ec" />
