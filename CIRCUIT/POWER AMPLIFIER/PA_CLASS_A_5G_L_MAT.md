@@ -98,3 +98,4 @@ Q: Why then the S21 is not 18.25dB
 7. GP vs F
 <img width="460" height="278" alt="image" src="https://github.com/user-attachments/assets/b989c0b4-8cfd-4fd1-8cea-5cd9f50b5d92" />
 Q: without giving anything in the port how come we get the values
+8.NC 
