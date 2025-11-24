@@ -1,4 +1,4 @@
-<h1 align="center">5-GHz Power Amplifier Design</h1>
+<h1>5-GHz Power Amplifier Design</h1>
 
 <hr/>
 
@@ -31,17 +31,13 @@
 
 <h2>3️⃣ Circuit Schematic (Before Matching)</h2>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/27297d19-31c7-4e5c-ab74-140598e4c589" width="600"/>
-</p>
+<img src="https://github.com/user-attachments/assets/27297d19-31c7-4e5c-ab74-140598e4c589" width="600"/>
 
 <hr/>
 
 <h2>4️⃣ Simulation Result — Before Matching</h2>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/1f58641a-2d94-4c44-8de2-d7db7bf1ef1f" width="900"/>
-</p>
+<img src="https://github.com/user-attachments/assets/1f58641a-2d94-4c44-8de2-d7db7bf1ef1f" width="900"/>
 
 <p>The circuit is unconditionally stable, but gain is below target due to unmatched input/output.</p>
 
@@ -49,33 +45,25 @@
 
 <h2>5️⃣ Input Matching Network</h2>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/dba9d82c-3a9d-4ff9-9105-521d2d91e639" width="600"/>
-</p>
+<img src="https://github.com/user-attachments/assets/dba9d82c-3a9d-4ff9-9105-521d2d91e639" width="600"/>
 
 <hr/>
 
 <h2>6️⃣ Output Matching Network</h2>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6da56475-eb55-43af-bd1b-d4004ce0e3a7" width="600"/>
-</p>
+<img src="https://github.com/user-attachments/assets/6da56475-eb55-43af-bd1b-d4004ce0e3a7" width="600"/>
 
 <hr/>
 
 <h2>7️⃣ Final PA Circuit After Matching</h2>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/57db9f80-2b69-4aca-bfa2-ecaa228a2a41" width="700"/>
-</p>
+<img src="https://github.com/user-attachments/assets/57db9f80-2b69-4aca-bfa2-ecaa228a2a41" width="700"/>
 
 <hr/>
 
 <h2>8️⃣ Final Simulation — After Matching</h2>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a7a9771e-412b-42f8-be7b-a73e58abc694" width="700"/>
-</p>
+<img src="https://github.com/user-attachments/assets/a7a9771e-412b-42f8-be7b-a73e58abc694" width="700"/>
 
 <hr/>
 
