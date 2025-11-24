@@ -115,7 +115,6 @@
 
 ### 9.9 Gain vs F (GAC)
 
-![GAC vs F](https://github.com/user-attachments/assets/... ) <!-- Replace with actual asset -->
 
 ### 9.10 Single-Sideband (SSB)
 
