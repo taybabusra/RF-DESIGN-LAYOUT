@@ -118,6 +118,7 @@
 <hr>
 
 <h1>11️⃣ Harmonic Balance (HB) Simulation</h1>
+SINGLE TONE SIGNAL ANALYSIS
 
 <h3>11.1 Voltage</h3>
 <img src="https://github.com/user-attachments/assets/fc106501-d18b-477b-93f8-e46ed9db07f6" width="250">
