@@ -51,4 +51,5 @@ HARMONICS BALANCE
 2.OUTPUT REFERRED 
 <img width="844" height="380" alt="image" src="https://github.com/user-attachments/assets/a4153ea2-1b11-41f2-951f-0844c1b910a5" />
 3.PAE:
-![Uploading image.png…]()
+<img width="897" height="406" alt="image" src="https://github.com/user-attachments/assets/fbdb297d-7a86-4370-907c-7ba91a7973f6" />
+
