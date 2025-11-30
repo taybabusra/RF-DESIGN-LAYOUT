@@ -33,3 +33,10 @@ OUTPUT MATCHING NETWEOK CALCULATION.
 
 ## fINAL SIMULATION OF THE CIRCUIT
 <img width="842" height="377" alt="image" src="https://github.com/user-attachments/assets/3302bee7-07df-474c-b331-f94f24686f31" />
+<img width="840" height="374" alt="image" src="https://github.com/user-attachments/assets/b437209d-2c51-4f8e-9e40-7775e2df8f23" />
+
+So the circuit is unconditionally stable but the gain is lower than specification
+
+## KEY observation:
+changing the L we can fixes the u in the circuit.
+
