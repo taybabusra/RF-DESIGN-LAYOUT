@@ -17,11 +17,11 @@
 
   <section>
     <h2>2. Noise Figure Optimization</h2>
-    <p>Noise circles (NC) allow tuning the input impedance to approach <strong>NF<sub>min</sub></strong>.choosing the perfect zd we can achicve the minimum noise figure for any circuit</p>
+    <p>Noise circles (NC) allow tuning the input impedance to approach <strong>NF<sub>min</sub></strong> Choosing the perfect zd we can achicve the minimum noise figure for any circuit</p>
     <div class="figures">
       <figure class="centered">
         <img src="https://github.com/user-attachments/assets/e7cf49b2-6048-4e67-bf4d-c265a55cc5da" alt="Noise Circle 1" />
-        <figcaption  align="center">Noise circle 1</figcaption>
+        <figcaption align="center">Noise circle 1</figcaption>
       </figure>
       <figure class="centered">
         <img src="https://github.com/user-attachments/assets/39e44abd-e6fc-4e35-a9ca-137ec835fe3f" alt="Noise Circle 2" />
