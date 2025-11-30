@@ -96,15 +96,3 @@
     </table>
   </section>
 </div>
-
-<style>
-  .container { font-family: 'Arial', sans-serif; line-height: 1.5; max-width: 900px; margin: auto; padding: 20px; }
-  h1 { text-align: center; margin-bottom: 0; }
-  .meta { text-align: center; font-size: 0.95rem; color: #555; margin-bottom: 2em; }
-  h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 2em; }
-  figure.centered { text-align: center; margin: 1em 0; }
-  figcaption { font-size: 0.85rem; color: #555; margin-top: 0.5em; }
-  table.styled { width: 100%; border-collapse: collapse; margin-top: 1em; }
-  table.styled th, table.styled td { border: 1px solid #ccc; padding: 0.6em; text-align: left; }
-  table.styled th { background: #f0f0f0; }
-</style>
