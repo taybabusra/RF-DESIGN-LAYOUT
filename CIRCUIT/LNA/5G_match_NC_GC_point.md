@@ -9,11 +9,11 @@
     <p>Starting point for all matching analysis. Baseline performance is measured and schematics reviewed.</p>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/4279dede-d2d8-413d-9ab7-2fa9d3f838a7" alt="Schematic and baseline measurement" />
-      <figcaption><div align="center">Schematic and baseline measurement</div></figcaption>
+      <figcaption><div align="center">Baseline circuit view </div></figcaption>
     </figure>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/80ad5aab-5277-40cf-a029-49a94e95b675" alt="Baseline circuit" />
-      <figcaption><div align="center">Baseline circuit view</div></figcaption>
+      <figcaption><div align="center">baseline measurement</div></figcaption>
     </figure>
   </section>
 
@@ -23,7 +23,7 @@
     <div class="figures">
       <figure class="centered">
         <img src="https://github.com/user-attachments/assets/e7cf49b2-6048-4e67-bf4d-c265a55cc5da" alt="Noise Circle 1" />
-        <figcaption><div align="center">Noise circle 1</div></figcaption>
+        <figcaption><div align="center">Noise circle </div></figcaption>
       </figure>
       <figure class="centered">
         <img src="https://github.com/user-attachments/assets/39e44abd-e6fc-4e35-a9ca-137ec835fe3f" alt="Noise Circle 2" />
@@ -42,12 +42,13 @@
     <p>Gain circles show the impedance for maximum available gain. Full gain requires both input and output matching.</p>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/53115fac-9a2d-4c1a-8048-ae2021caafb3" alt="Gain Circle 1" />
-      <figcaption><div align="center">Gain circle analysis 1</div></figcaption>
+      <figcaption><div align="center">Circuit with input matching for highees gain</div></figcaption>
     </figure>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/9d9a2567-8457-4d4f-b5f0-199d22e1ad06" alt="Gain Circle 2" />
-      <figcaption><div align="center">Gain circle analysis 2</div></figcaption>
+      <figcaption><div align="center">Gain circle Simulation</div></figcaption>
     </figure>
+    <p>From the simulation for the highest gai,n we need to match the output section as well as we can see the NF is increased from the baseline measurement.</p>
   </section>
 
   <section>
@@ -59,11 +60,11 @@
     </figure>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/ebfed988-84ff-46f7-bb6c-1029d73d57ae" alt="Intersection 2" />
-      <figcaption><div align="center">Intersection 2</div></figcaption>
+      <figcaption><div align="center">INPUT MATCHING CIRCUIT</div></figcaption>
     </figure>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/bf2e7d92-abbb-4db4-832e-533a910728b4" alt="Intersection 3" />
-      <figcaption><div align="center">Intersection 3</div></figcaption>
+      <figcaption><div align="center">Simulation after matching</div></figcaption>
     </figure>
   </section>
 
