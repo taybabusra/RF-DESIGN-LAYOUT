@@ -8,9 +8,10 @@
 
 
 
-## SECOND: NC= 15.3
+## SECOND: NC= 15.2 tryig to match where the gain is higher
 
-<img width="482" height="404" alt="image" src="https://github.com/user-attachments/assets/84ba9f1c-b846-40b9-b7e0-d1f160fd4fa8" />
+<img width="461" height="386" alt="image" src="https://github.com/user-attachments/assets/6323ce6f-d1b6-4bf0-9d28-53cbf9735684" />
+
 
 ## Third point NC:2.6 & GC:14
 <img width="481" height="398" alt="image" src="https://github.com/user-attachments/assets/d3a26e47-c623-41bb-b15d-395d11bf80b2" />
