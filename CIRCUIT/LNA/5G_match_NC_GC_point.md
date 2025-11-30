@@ -9,10 +9,9 @@
     <p>Starting point for all matching analysis. Baseline performance is measured and schematics reviewed.</p>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/4279dede-d2d8-413d-9ab7-2fa9d3f838a7" alt="Schematic and baseline measurement" />
-      <figcaption>Schematic and baseline measurement.</figcaption>
     </figure>
     <figure class="centered">
-      <img src="https://github.com/user-attachments/assets/80ad5aab-5277-40cf-a029-49a94e95b675" alt="Baseline circuit" />
+      <img src="https://github.com/user-attachments/assets/80ad5aab-5277-40cf-a029-49a94e95b675"/>
       <figcaption>Baseline circuit view.</figcaption>
     </figure>
   </section>
