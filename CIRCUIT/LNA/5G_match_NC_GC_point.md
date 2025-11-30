@@ -7,13 +7,7 @@
   <section>
     <h2>1. Initial Circuit &amp; Baseline Simulation</h2>
     <p class="lead">Schematic and baseline measurement used as the starting point for matching work and circle analysis.</p>
-
-    <figure class="figure">
-      <img src="https://github.com/user-attachments/assets/4279dede-d2d8-413d-9ab7-2fa9d3f838a7" />
-    </figure>
-    <figure class="figure">
-      <img src="https://github.com/user-attachments/assets/80ad5aab-5277-40cf-a029-49a94e95b675" />
-    </figure>
+    <img width="669" height="327" alt="image" src="https://github.com/user-attachments/assets/4279dede-d2d8-413d-9ab7-2fa9d3f838a7" /
   </section>
 
   <section>
