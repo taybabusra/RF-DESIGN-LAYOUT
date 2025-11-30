@@ -16,7 +16,20 @@ Figure is defining the intersection between noise circle and gain circle.
 The intersecting point Zd = 108.556+47.603j
 <img width="959" height="380" alt="image" src="https://github.com/user-attachments/assets/4828d3b8-1e83-4030-98e3-c35ad0125f11" />
 Matching network calculation for input secton
-<img width="845" height="377" alt="image" src="https://github.com/user-attachments/assets/4d9a19d5-0d39-4f37-8cf9-76627067e1b8" />
+<img width="680" height="309" alt="image" src="https://github.com/user-attachments/assets/a84e43bc-e9a6-4de0-8d89-6e557b2f9d5c" />
 Ciccuit of after input matching
 <img width="843" height="382" alt="image" src="https://github.com/user-attachments/assets/86e015ba-d8c7-4e62-836f-ad4c54b844cc" />
 Result after input matching
+
+
+# OUTPUT MATCHING
+<img width="424" height="368" alt="image" src="https://github.com/user-attachments/assets/d6eb741d-11a2-4e5e-948b-85c1f6b46c3a" />
+Z parameters calculation because of unilateral matching.
+<img width="946" height="364" alt="image" src="https://github.com/user-attachments/assets/156df2b4-a314-40bc-8079-0cbfc95d213e" />
+OUTPUT MATCHING NETWEOK CALCULATION.
+
+# Complete circuit to meet the specification
+<img width="691" height="335" alt="image" src="https://github.com/user-attachments/assets/5ff5f002-5f8b-43a6-a422-f606c465998d" />
+
+## fINAL SIMULATION OF THE CIRCUIT
+<img width="842" height="377" alt="image" src="https://github.com/user-attachments/assets/3302bee7-07df-474c-b331-f94f24686f31" />
