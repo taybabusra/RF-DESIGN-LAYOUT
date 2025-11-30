@@ -1,10 +1,8 @@
 PA circuit 
 <img width="669" height="327" alt="image" src="https://github.com/user-attachments/assets/4279dede-d2d8-413d-9ab7-2fa9d3f838a7" />
+Circuit initial simulation
+<img width="442" height="291" alt="image" src="https://github.com/user-attachments/assets/80ad5aab-5277-40cf-a029-49a94e95b675" />
 
-
-
-# Before matching the circuit NFmin, NF Gmax
-<img width="467" height="308" alt="image" src="https://github.com/user-attachments/assets/7f8fbce7-3d7d-4ef0-82d2-6e573587fa6f" />
 
 ## FIRST: NC= 2
 
