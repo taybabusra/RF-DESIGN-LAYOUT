@@ -54,15 +54,12 @@
     <p>Matching at the intersection of noise and gain circles yields both exact gain and NF.</p>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/962afa1b-7183-4ed9-a9e9-981470378a30" alt="Intersection 1" />
-      <figcaption>Intersection 1</figcaption>
     </figure>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/ebfed988-84ff-46f7-bb6c-1029d73d57ae" alt="Intersection 2" />
-      <figcaption>Intersection 2</figcaption>
     </figure>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/bf2e7d92-abbb-4db4-832e-533a910728b4" alt="Intersection 3" />
-      <figcaption>Intersection 3</figcaption>
     </figure>
   </section>
 
