@@ -12,13 +12,12 @@
     </figure>
     <figure class="centered">
       <img src="https://github.com/user-attachments/assets/80ad5aab-5277-40cf-a029-49a94e95b675"/>
-      <figcaption>Baseline circuit view.</figcaption>
     </figure>
   </section>
 
   <section>
     <h2>2. Noise Figure Optimization</h2>
-    <p>Noise circles (NC) allow tuning the input impedance to approach <strong>NF<sub>min</sub></strong>.</p>
+    <p>Noise circles (NC) allow tuning the input impedance to approach <strong>NF<sub>min</sub></strong>.choosing the perfect zd we can achicve the minimum noise figure for any circuit</p>
     <div class="figures">
       <figure class="centered">
         <img src="https://github.com/user-attachments/assets/e7cf49b2-6048-4e67-bf4d-c265a55cc5da" alt="Noise Circle 1" />
@@ -26,15 +25,15 @@
       </figure>
       <figure class="centered">
         <img src="https://github.com/user-attachments/assets/39e44abd-e6fc-4e35-a9ca-137ec835fe3f" alt="Noise Circle 2" />
-        <figcaption>Noise circle 2</figcaption>
+        <figcaption>After matching citcuit</figcaption>
       </figure>
       <figure class="centered">
         <img src="https://github.com/user-attachments/assets/49aff484-fecb-4e98-b28f-e36bb4eb7106" alt="Noise Circle 3" />
-        <figcaption>Noise circle 3</figcaption>
+        <figcaption>Simulation of after matching citcuit.</figcaption>
       </figure>
+    <p> Observation: after doing the input matching the circuit goes into closer to the NFmin </p>
     </div>
   </section>
-
   <section>
     <h2>3. Gain Optimization</h2>
     <p>Gain circles show the impedance for maximum available gain. Full gain requires both input and output matching.</p>
