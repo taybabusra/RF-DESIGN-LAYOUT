@@ -16,3 +16,8 @@ Highering the currentwith higher the W then the NFmin is coming less but k is no
 # 4th another circuit
 <img width="784" height="358" alt="image" src="https://github.com/user-attachments/assets/1b11642e-eb0c-4e31-9d83-8d1199bcc024" />
 <img width="560" height="329" alt="image" src="https://github.com/user-attachments/assets/5d13fc9b-00eb-424e-89dd-764a2594c31f" />
+
+# 5th circuit
+<img width="677" height="357" alt="image" src="https://github.com/user-attachments/assets/13258007-6825-430b-8ad4-55a427a53df7" />
+
+<img width="452" height="317" alt="image" src="https://github.com/user-attachments/assets/bcd70a6a-ff36-498f-8181-cac04fd234d2" />
