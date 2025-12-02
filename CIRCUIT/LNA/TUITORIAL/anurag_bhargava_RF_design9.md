@@ -28,25 +28,19 @@ Q: what's the friis formula? from where it is calculated.
 Friis's formula is used to clculated the total noise factor of a cascade of stages. each with its own noises facto and power gain 
 where the impedances are matched at each stage. Total noise factor ca nthen be used to calculate the total noise figure.
 <img width="198" height="41" alt="image" src="https://github.com/user-attachments/assets/863d36e4-d642-42d0-b79e-4bceae5dd34a" />
-where 
-F
-r
-e
-s
-t
-{\displaystyle F_{\mathrm {rest} }} is the overall noise factor of the subsequent stages. According to the equation, the overall noise factor, 
-F
-r
-e
-c
-e
-i
-v
-e
-r
-{\displaystyle F_{\mathrm {receiver} }}, is dominated by the noise factor of the LNA, 
-F
-L
-N
-A
-{\displaystyle F_{\mathrm {LNA} }}, if the gain is sufficiently high. The resultant Noise Figure expressed in dB is:
+<img width="460" height="49" alt="image" src="https://github.com/user-attachments/assets/7e233b96-1270-47de-baff-76bd81f83b02" />
+<img width="268" height="39" alt="image" src="https://github.com/user-attachments/assets/f6916117-f588-41e4-9f43-4918f75a547b" />
+Q: when I am designing the LNA then it's S11 is not closer to -10dB. it's in the range of -5dB why is that so? does this has the impact on my system?
+<img width="443" height="257" alt="image" src="https://github.com/user-attachments/assets/0a52ec4a-8b3a-47f5-9628-ba67ab66b382" />
+Based on technoloy the props and cons are the device size, availibility etc.
+
+When desining the circuit the rule of thum to remember that 
+pick a device whose optimum NF = 1/2 of the desired NF from the LNA circuit
+Q: what i gamma optimum values or magnitude? why it is important to design a circuit.
+Q: why does the linearity and non-lineartity of the device is important when designing a circuit.
+
+
+#LNA impedance matching consideration:
+1.gamma opt is the reflection co-efficient of the source impedance presented to the device that allows the device to produce it's NFmin.
+matching circuit losses of oftne limit the ability of the amplifier to achieve a noise figure equivalesn to device NFmin.
+Q: what is the Rn after matching it should be equal to source resistnace why it's lower than that. what's the relation between Rn and Z11.
