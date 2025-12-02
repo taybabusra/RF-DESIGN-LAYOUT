@@ -110,3 +110,13 @@ Linearity & nonlinearity play a critical role in preventing distortion and inter
 </p>
 
 <h1>LNA DESIGN FLOW</h1>
+1. DC analysis
+2. Stability Network Design
+3. Bias Network Design
+4. Impedance Matcihng N/W Design
+5. EM- circuit Cosimulation
+6. EM simulation considerations for Non-Linear Simulations
+7.Non-Linear simulation/Verification
+8.Gettinh insights with EM-Circuit Excitation
+9.Gerber Generation
+10. Performance benchmark with an off the shelf LNA.
