@@ -271,4 +271,6 @@ IMD cannot be removed entirely, but its impact can be minimized through proper e
 
 <hr>
 
-<p><i>Use this article directly in your GitHub README.md — GitHub supports HTML formatting.</i></p>
+<img width="245" height="220" alt="image" src="https://github.com/user-attachments/assets/fd5ba114-6cf9-4cc6-9d69-8030d123eb8a" />
+<img width="278" height="170" alt="image" src="https://github.com/user-attachments/assets/3341751b-bd89-4afa-a4ec-dcfd55d26918" />
+
