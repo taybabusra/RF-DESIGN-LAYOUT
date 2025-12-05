@@ -164,13 +164,13 @@ Def1: square root of series impedance and shunt admittance <br>
 <br>
 y  = root(R+jwL)(G+jwC) = root(ZY)
 <br>
-Def2: Propagation constant in nepper also defined as the natural logarithm of ratio of sending end current to the receiving end current or it can be said as the sending end voltage to receiving end voltage.
+Def2: Propagation constant in nepper also defined as the natural logarithm of ratio of sending end current to the receiving end current or it can be said as the sending end voltage to receiving end voltage.<br>
 Def3:
-
-Def4: Propagation constant is a complex quantity 
-   gamma Y = Alpha (a)+ jBetal(B)
-   where alpha a = Attenuation constant dB/m
-         Beta B = Phase constant rad/m
+<br>
+Def4: Propagation constant is a complex quantity <br>
+   gamma Y = Alpha (a)+ jBetal(B) <br>
+   where alpha a = Attenuation constant dB/m <br>
+         Beta B = Phase constant rad/m <br>
 
 If a signal is transmitted through a transmission line from transmitter to receiver, then some of the signal gets attenuated. This can be represented by the attenuation constant (magnitude changes)
 Phase changes can be represented by Beta (phase constant). This is combinely called as propagation constant.
