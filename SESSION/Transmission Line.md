@@ -41,19 +41,27 @@ the various types are
 - The telepone calbes consists of hundred of conductors which are individually insulated with paper
 - These are twisted in pairs and combined together and placed inside a protective lead or plastic sheath.
 * Disadvantage
+   - Need to know?
 * Advantage
+   - Need to know?
 
 ### Coaxial line
 - There are two conductors which are coaxially placed
 - One conductor is hollow, other is placed co axially inside the first conductor
 - the dielectric may be sold or gaseous
 - These lines are used for high voltage levels
-
+* Disadvantage
+  - Need to know?
+* Advantage
+  - need to know?
 ### WAVEGUIDES:
 - These types are used to transmit the electrical waves at micowave frequencies
 - They are hollow ocnducting tubes having uniform cross section.
   Q: what's the problem if the cross section is not uniform?
 - The energy is transmitted from the inner walls of the tube by phenomenon of total internal reflection.
   Q: What's the totla internal reflection?
-  
+* Disadvantage
+   - Need to know ?
+* Advantage
+   - Need to know?
 ## Transmission line parameters
