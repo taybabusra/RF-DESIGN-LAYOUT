@@ -190,3 +190,20 @@ CASE:<br>
      Z0 = root(R/G)
 2. When the frequency is large R<<jwL,G<<jwC <br>
      Z0 = root(L/C)
+
+# Transmission Line Equation | General equation or general solution
+Transmission line is a conductive method of guiding electrical energy form one place to another. A uniform transmission line can be considered to be made up of an infinite number of T sections each of the size is ldx.<br>
+<img width="338" height="143" alt="image" src="https://github.com/user-attachments/assets/1c044641-c412-4b81-a7c7-5775365c2a69" />
+<br> 
+We know the series impedance per unit length and shunt admittance per unit length are given by 
+Z = R+jwL
+Y = G+jwC
+We can now say the voltage difference 
+V+dV-V = I(R+jwL)dx <br>
+=> dV/dx = I(R+jwL)=IZ <br>
+Current difference is due to the volatage drop acros shunt admittance:
+I+dI-I = V(G+jwC)dx <br>
+dI/dx = V(G+jwC) = V.Y
+
+Differentiating the equation:
+d2V/d
