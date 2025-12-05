@@ -153,3 +153,28 @@ Q: From the equivalent circuit, we can see the inductor and resistor are in the 
 
 
 # Transmission line theory|Primay & Secondary constants
+### Seconday constants:
+  - Propagation constant(gamma y)
+  - Characteristics impedance (Z0)
+  - Attenuation constant (alpha a)
+  - Phase constant (beta B)
+## Propagation constant (gamma Y)
+Def1: square root of series impedance and shunt admittance
+<img width="399" height="154" alt="image" src="https://github.com/user-attachments/assets/4680d87f-c157-4db5-97ba-077e9dd29e9a" />
+<br>
+y  = root(R+jwL)(G+jwC) = root(ZY)
+<br>
+Def2: Propagation constant in nepper also defined as the natural logarithm of ratio of sending end current to the receiving end current or it can be said as the sending end voltage to receiving end voltage.
+Def3:
+
+Def4: Propagation constant is a complex quantity 
+   gamma Y = Alpha (a)+ jBetal(B)
+   where alpha a = Attenuation constant dB/m
+         Beta B = Phase constant rad/m
+
+If a signal is transmitted through a transmission line from transmitter to receiver, then some of the signal gets attenuated. This can be represented by the attenuation constant (magnitude changes)
+Phase changes can be represented by Beta (phase constant). This is combinely called as propagation constant.
+Case:
+1. When the frequency is small Y = root(RG)
+2. When the frequency is large R<<jwL and G<<jwC
+   then the propagation constant gamma y = root((jwL)(jwC)) = jwroot(LC)
