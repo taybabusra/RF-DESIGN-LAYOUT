@@ -178,3 +178,15 @@ Case:
 1. When the frequency is small Y = root(RG)
 2. When the frequency is large R<<jwL and G<<jwC
    then the propagation constant gamma y = root((jwL)(jwC)) = jwroot(LC)
+## Characteristics Impedance(Z0)
+- Def1:It is a ratio of the forward voltage wave to the forward current wave at any point on the line.
+     Z0 = Vf/If
+- Def2: It is the ratio of the root (series impedance/shunt admittance)
+    Z0 = root(Z/Y) = root((Z+jwL)/(G+jwC))
+- Def3: Z0 is also defined as the negative of the ratio of the reflected voltage wave to the refleted current wave at any point on the line.
+    Z0 = -Vr/Ir
+CASE:<br>
+1. When the frequency is small w--> 0 hence<br>
+     Z0 = root(R/G)
+2. When the frequency is large R<<jwL,G<<jwC <br>
+     Z0 = root(L/C)
