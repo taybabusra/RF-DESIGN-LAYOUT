@@ -75,7 +75,7 @@ The various electic parameters associated with the transmission lines are:(Prima
 Electric equivalent circuit of transmission line<br>
 <img width="368" height="197" alt="image" src="https://github.com/user-attachments/assets/a2965b4b-bfa9-4233-bb1f-da15f5c19535" />
 <br>
-#### RESISTANCE:
+### RESISTANCE:
 - depending upon the cross sectional area of the conductors the transmision lines have resistance associated with them.
 - From the mathmatical perspective <br>
      $R \propto \dfrac{L}{A}$
