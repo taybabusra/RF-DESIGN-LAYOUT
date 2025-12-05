@@ -159,7 +159,7 @@ Q: From the equivalent circuit, we can see the inductor and resistor are in the 
   - Attenuation constant (alpha a)
   - Phase constant (beta B)
 ## Propagation constant (gamma Y)
-Def1: square root of series impedance and shunt admittance
+Def1: square root of series impedance and shunt admittance <br>
 <img width="399" height="154" alt="image" src="https://github.com/user-attachments/assets/4680d87f-c157-4db5-97ba-077e9dd29e9a" />
 <br>
 y  = root(R+jwL)(G+jwC) = root(ZY)
