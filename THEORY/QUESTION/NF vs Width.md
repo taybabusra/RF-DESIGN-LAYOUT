@@ -77,5 +77,4 @@
 
 <hr>
 
-<p><strong>If you want</strong>: I can generate a ready-to-run PDK-agnostic sweep script (Cadence ADE/Ngspice/ADS) or a short checklist for post-layout extraction — tell me which simulator/PDK and I’ll produce it as a copy-paste snippet.</p>
 
