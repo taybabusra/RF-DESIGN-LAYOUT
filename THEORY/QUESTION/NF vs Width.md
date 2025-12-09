@@ -77,4 +77,12 @@
 
 <hr>
 
+### SIMULATION
+<img width="517" height="425" alt="image" src="https://github.com/user-attachments/assets/b49163ed-fab7-4636-87a3-f5c946bc15ad" />
 
+<img width="541" height="440" alt="image" src="https://github.com/user-attachments/assets/48fba68b-4c53-4a86-bd81-a8afd1dcf50f" />
+🎯 Optimum noise impedance (Zopt) shifts with Vbias
+As bias increases:
+gm increases → Zopt decreases
+If your source impedance is fixed (e.g., 50 Ω),
+mismatch between Zs and Zopt increases at some bias points
