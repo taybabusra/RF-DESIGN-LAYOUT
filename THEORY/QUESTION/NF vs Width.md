@@ -91,3 +91,7 @@ As bias increases:
 gm increases → Zopt decreases
 If your source impedance is fixed (e.g., 50 Ω),
 mismatch between Zs and Zopt increases at some bias points
+
+
+# NOISE SIMULATION
+<img width="542" height="438" alt="image" src="https://github.com/user-attachments/assets/1de1651e-a8eb-4c8e-806f-9250e443e06c" />
