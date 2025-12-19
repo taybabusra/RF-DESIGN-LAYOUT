@@ -13,7 +13,7 @@ A radio system has three sections, with antennas serving as couplers between eac
 # The radio transmitter:
 <img width="428" height="287" alt="image" src="https://github.com/user-attachments/assets/571b573e-829d-4bc7-8b73-4a29023a09c9" />
 The secret is that each transmitter emits a time harmonics (sinusoidal) electromagnetic wae at one pre assigned and precise frequency.
-So we can say that each transmitter has an eigenfunction.
+So we can say that each transmitter has an eigenfunction.\
 # The propagation Channel
 Channel is nothing but a free space. if propagates enough, then the energy losses.
 <img width="431" height="302" alt="image" src="https://github.com/user-attachments/assets/11d05c10-06a4-4c9b-8390-5ffe393f17b9" />
