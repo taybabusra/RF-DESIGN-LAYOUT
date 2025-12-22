@@ -85,3 +85,11 @@ based on this conclusion we can say that any number is a complex where the imagi
 Based on the euler equation we can say that cos(phi) is the real part of eular function. where phi = wt + x
 <img width="422" height="316" alt="image" src="https://github.com/user-attachments/assets/eb065d0f-ad8f-49db-bac5-44b943780afd" />
 We can write any sinusoidal as a real part of four complex values,
+# Complex number has a magnitude and phase.
+<img width="403" height="298" alt="image" src="https://github.com/user-attachments/assets/eec008c0-5a64-4b6c-a0f7-5b15418ada96" />
+# important takeway for the circuit.
+<img width="424" height="329" alt="image" src="https://github.com/user-attachments/assets/88c131c9-7a43-4800-945f-c810c14d39c2" />
+...
+<img width="428" height="339" alt="image" src="https://github.com/user-attachments/assets/13b7ee0c-cd2d-4d9a-88ab-e8a70d6c214b" />
+<img width="428" height="335" alt="image" src="https://github.com/user-attachments/assets/2b1b6f80-3317-43fc-b122-8600072abeba" />
+<img width="384" height="305" alt="image" src="https://github.com/user-attachments/assets/ff9123bd-057e-473f-a96c-45193442dd5a" />
