@@ -233,11 +233,3 @@ Breaks the noise limitation of common-gate LNAs.
 </ul>
 
 <hr>
-
-<h2>🎯 One-Line Master Statement</h2>
-
-<p>
-<b>
-A good LNA simultaneously optimizes noise, gain, matching, linearity, and stability for the required bandwidth under power and technology constraints.
-</b>
-</p>
