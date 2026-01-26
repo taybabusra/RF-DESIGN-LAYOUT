@@ -21,5 +21,6 @@ Total phase shift = 0 or 360<br>
 
 ### AC Analysis Simulation result:
 <img width="467" height="317" alt="image" src="https://github.com/user-attachments/assets/4a57566d-7411-4772-be6f-99fed44e7f30" />
+
 ### Transient Analysis result of the 50ns time period:
 <img width="469" height="304" alt="image" src="https://github.com/user-attachments/assets/336621f7-66d9-4b0a-8666-a6e38847f383" />
