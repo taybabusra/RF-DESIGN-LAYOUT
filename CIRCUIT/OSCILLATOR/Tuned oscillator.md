@@ -24,3 +24,20 @@ Total phase shift = 0 or 360<br>
 
 ### Transient Analysis result of the 50ns time period:
 <img width="469" height="304" alt="image" src="https://github.com/user-attachments/assets/336621f7-66d9-4b0a-8666-a6e38847f383" />
+
+Summary of the design and the challenges:
+Here, the tuned oscillator is based on the parallel LC network circuit, where the fundamental frequency of the circuit is defined by the value of the L and C network.
+The equation of the fundamental frequency is defined by the values of the 
+   f= 1/2piroot (LC)
+Circuit working principle:
+1. Due to the DC voltage, the MOSFET is in the saturation region, and it will amplify the voltage without any AC input. There is a voltage in the drain node due to the Vds = Vgs = Vth, and due to this voltage, the charge accumulates in the capacitor plant and there is an electric field between plate of the capacitor. Due to this, there is a energy stored by the electric field.
+2. Due to the drain current flows through the inductor, a magnetic field is created around the coil, and energyis  stored due to the magnetic field.
+3. The importance of the resistor in the circuit: Because the resisotor control how much energy is lost per cycle in the tank.
+    Less loss - energy build up more- larger voltage swing -- higher gain.
+
+   NMOS used as a current source, id = gm vgs
+   tank converts the current into a voltage, vout = id Ztank.
+   The phase of the inductor and the capacitor current  are in opposite phase.
+
+4. The value of R is small, which means high loss because it allows more current to flow for the same voltage, and that current dissipates more energy as heat every cycle.
+5.  The value of the Q = woRC 
