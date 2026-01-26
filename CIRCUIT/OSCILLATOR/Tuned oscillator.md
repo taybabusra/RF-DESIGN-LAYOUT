@@ -44,13 +44,16 @@ Circuit working principle:
 
 
 ## Cascade of two Tuned Oscillator Circuit<br> 
-<img width="736" height="361" alt="image" src="https://github.com/user-attachments/assets/6c258856-12c8-44c4-afb5-771ab7252df2" />
+<img width="736" height="361" alt="image" src="https://github.com/user-attachments/assets/6c258856-12c8-44c4-afb5-771ab7252df2" /> <br>
 ### AC analysis simulation result:
 <img width="461" height="297" alt="image" src="https://github.com/user-attachments/assets/918cdcc0-714f-4b27-a3a8-ff319fed94d6" /> <br>
-At first, with the same value of the DC in the gate of the mosfet which was 340mV then there was a phase shift of around -30 so after that I changed the Dc voltage of the input to change the phase shift improvement of -24degree. 
+At first, with the same value of the DC in the gate of the mosfet which was 340mV then there was a phase shift of around -30 so after that I changed the Dc voltage of the input to change the phase shift improvement of -24degree. <br>
 Q: why this happening? As far as my understanding the both mosfet doesn't have the same Cgs or Cgd and coupling capacitor.<br>
 <img width="464" height="299" alt="image" src="https://github.com/user-attachments/assets/e56dd9c1-37d9-439a-b4a7-822f4d495789" /><br> 
 Figure: the result of the first stage.<br>
 <img width="464" height="310" alt="image" src="https://github.com/user-attachments/assets/ce76e5fb-bfe0-4b1b-aeff-e9fb7ea97818" /> <br>
-Figure: result of the 2nd stage.
+Figure: result of the 2nd stage.<br>
 
+### Transient analysis simulation result:
+<img width="467" height="310" alt="image" src="https://github.com/user-attachments/assets/4fde77ac-3353-4a7c-bdf7-c812487003c2" />
+The intermediate note has a more than 180 phase shift, and last has also the 180 phase shift to get the output, which  has more than -24 phase shift.
