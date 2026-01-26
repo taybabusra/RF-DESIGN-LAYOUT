@@ -57,3 +57,21 @@ Figure: result of the 2nd stage.<br>
 ### Transient analysis simulation result:
 <img width="467" height="310" alt="image" src="https://github.com/user-attachments/assets/4fde77ac-3353-4a7c-bdf7-c812487003c2" /> <br>
 The intermediate note has a more than 180 phase shift, and last has also the 180 phase shift to get the output, which  has more than -24 phase shift.
+## Cross-Coupled Tuned Oscillator Circuit
+<img width="698" height="373" alt="image" src="https://github.com/user-attachments/assets/aec7a2de-92a9-42de-81a1-591b5ab2e7e7" />
+
+## Transient Analysis Simulation result:
+<img width="465" height="306" alt="image" src="https://github.com/user-attachments/assets/f4d5882d-3630-48aa-bb4d-0c2cb604c106" /> <br>
+
+Particularly in this circuit, there are two things I need to consider: one is staring circuit how the circuit will be one and get's started. <br>
+To start the circuit, we can do two things: one is add an initial condition from the simulation window.<br>
+<img width="304" height="278" alt="image" src="https://github.com/user-attachments/assets/b18ea8f2-ab53-4871-85f3-babda4522097" />
+<img width="236" height="185" alt="image" src="https://github.com/user-attachments/assets/e6c67550-e57d-48d0-b2a1-9de1820c8e48" /><br>
+Click on the node or net where We want to add the values of the initial set and give the value. After that, it will start to work.<br>
+<br>
+Another way to work on the circuit starting point is to add the transient noise in the simulation.<br>
+<img width="240" height="418" alt="image" src="https://github.com/user-attachments/assets/289b8809-3fdd-4e23-b56a-cd36a25748de" /> <br>
+Here is the maximum noise frequency definition of the circuit.<br>
+
+# Summary: 
+It's showing the output, which should be shown in the circuit behaviour, but I need to analyze the HB and other simulations for this circuit from YT.
