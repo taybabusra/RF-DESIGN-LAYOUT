@@ -1,6 +1,6 @@
-Q: What is an oscillator? Why do we need the oscillator? What's the fundamental building block of an oscillator?
+Q: What is an oscillator? Why do we need the oscillator? What's the fundamental building block of an oscillator?<br>
 
-Solution:
+Solution:<br>
 An oscillator is an electronic circuit that generates a periodic signal (AC)—usually a sine wave, square wave, or clock—without requiring an external input signal.
 It basically converts the DC power into a periodic AC signal at a specific frequency.
 An oscillator is a circuit that produces a continuous, self-sustained oscillation at a specific frequency.
