@@ -10,3 +10,18 @@ In a tank circuit with inductors, you often have:
 2.Coupling between coils
 3.Magnetic field interference
 4.This causes frequency instability.
+
+Colpitts Oscillator is a parallel tank circuit.
+his is because the actual frequency of oscillation is a little lower because of the resistive loading and junction capacitances of the transistor.
+
+ if a Colpitts oscillator is in use as a VFO (variable-frequency oscillator), it will perform best when tuning is via variable inductance. The performance of the Colpitts oscillator will also be in contrast if tuning is via one of the two capacitors
+
+ he Colpitts oscillator is distinctive since it derives its feedback from what we call a center-tapped capacitance. 
+
+
+
+
+
+
+
+ 
