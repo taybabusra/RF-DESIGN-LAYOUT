@@ -55,5 +55,5 @@ Figure: the result of the first stage.<br>
 Figure: result of the 2nd stage.<br>
 
 ### Transient analysis simulation result:
-<img width="467" height="310" alt="image" src="https://github.com/user-attachments/assets/4fde77ac-3353-4a7c-bdf7-c812487003c2" />
+<img width="467" height="310" alt="image" src="https://github.com/user-attachments/assets/4fde77ac-3353-4a7c-bdf7-c812487003c2" /> <br>
 The intermediate note has a more than 180 phase shift, and last has also the 180 phase shift to get the output, which  has more than -24 phase shift.
