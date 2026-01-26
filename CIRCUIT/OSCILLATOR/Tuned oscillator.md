@@ -41,3 +41,16 @@ Circuit working principle:
 
 4. The value of R is small, which means high loss because it allows more current to flow for the same voltage, and that current dissipates more energy as heat every cycle.
 5.  The value of the Q = woRC 
+
+
+## Cascade of two Tuned Oscillator Circuit<br> 
+<img width="736" height="361" alt="image" src="https://github.com/user-attachments/assets/6c258856-12c8-44c4-afb5-771ab7252df2" />
+### AC analysis simulation result:
+<img width="461" height="297" alt="image" src="https://github.com/user-attachments/assets/918cdcc0-714f-4b27-a3a8-ff319fed94d6" /> <br>
+At first, with the same value of the DC in the gate of the mosfet which was 340mV then there was a phase shift of around -30 so after that I changed the Dc voltage of the input to change the phase shift improvement of -24degree. 
+Q: why this happening? As far as my understanding the both mosfet doesn't have the same Cgs or Cgd and coupling capacitor.<br>
+<img width="464" height="299" alt="image" src="https://github.com/user-attachments/assets/e56dd9c1-37d9-439a-b4a7-822f4d495789" /><br> 
+Figure: the result of the first stage.<br>
+<img width="464" height="310" alt="image" src="https://github.com/user-attachments/assets/ce76e5fb-bfe0-4b1b-aeff-e9fb7ea97818" /> <br>
+Figure: result of the 2nd stage.
+
