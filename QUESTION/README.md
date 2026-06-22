@@ -1,5 +1,5 @@
 
-## Question
+## Question1
 The same signal can be viewed in the frequency domain. What does that view reveal that the time domain does not?
 
 <table>
@@ -23,7 +23,7 @@ The frequency-domain view shows how the signal's energy is distributed across fr
 
 
 
-## Question
+## Question2
 Experienced RF designers treat PCB layout as part of the circuit, not an afterthought. What does that mean in practice?
 
 <table>
@@ -47,7 +47,7 @@ It means the layout itself realizes transmission lines, matching elements, groun
 
 
 
-## Question
+## Question3
 Glitch power can be a surprisingly real fraction of total dynamic power. Where do the glitches that cause it come from?
 
 <table>
@@ -70,7 +70,7 @@ Glitches are spurious transitions that occur when inputs to a gate arrive at dif
 ---
 
 
-## Question
+## Question4
 What does the term return loss mean, and what range is generally considered acceptable for a well-matched RF port at 2.4 GHz?
 
 <table>
@@ -88,3 +88,31 @@ Return loss is a measure of how much power is reflected back from an RF port com
 </td>
 </tr>
 </table>
+---
+
+
+## Question5
+As an RF signal's frequency rises, its wavelength shrinks. Why does that relationship change how you treat a physical trace?
+
+<table>
+<tr>
+<td width="50%">
+
+### Myself
+When frequency rises, wavelength shrinks, and the trace becomes electrically “long” relative to the signal.
+So it stops behaving like a simple wire (lumped circuit) and behaves like a transmission line.
+That forces you to treat it in terms of i) Controlled impedance, ii) Reflections (mismatch effects), iii)Delay/phase along the trace, 
+high frequency turns routing from “connect points” into “manage wave behavior.”
+
+</td>
+<td width="50%">
+
+### Answer
+As the frequency of an RF signal increases, its wavelength decreases, which significantly impacts how we treat physical traces in RF design. When the wavelength becomes comparable to the length of the trace, the trace no longer behaves like a simple lumped element but rather as a transmission line. This transition necessitates a different approach to design and analysis. We must consider controlled impedance to ensure that the signal is transmitted efficiently without reflections. Mismatches in impedance can lead to reflections that degrade signal quality, so careful design is essential. Additionally, the delay and phase shifts along the trace become critical factors to manage, as they can affect the timing and integrity of the signal. In essence, at high frequencies, routing is not just about connecting points; it involves managing wave behavior to maintain signal fidelity and performance in the RF system.
+<br>
+Wavelength is the speed of propagation divided by frequency, so higher frequency means a shorter wavelength. Once a trace length is a meaningful fraction of a wavelength, the signal's phase changes appreciably along it, and the trace behaves as a transmission line rather than a simple wire. So the same physical length that is negligible at low frequency demands controlled impedance and matching at RF.
+</td>
+</tr>
+</table>
+
+
