@@ -1,4 +1,3 @@
-# Frequency Domain Insight
 
 ## Question
 The same signal can be viewed in the frequency domain. What does that view reveal that the time domain does not?
@@ -22,7 +21,7 @@ The frequency-domain view shows how the signal's energy is distributed across fr
 
 ---
 
-# RF PCB Layout as Circuit
+
 
 ## Question
 Experienced RF designers treat PCB layout as part of the circuit, not an afterthought. What does that mean in practice?
@@ -46,7 +45,7 @@ It means the layout itself realizes transmission lines, matching elements, groun
 
 ---
 
-# Glitch Power Origin
+
 
 ## Question
 Glitch power can be a surprisingly real fraction of total dynamic power. Where do the glitches that cause it come from?
@@ -70,7 +69,6 @@ Glitches are spurious transitions that occur when inputs to a gate arrive at dif
 
 ---
 
-# Return Loss (RF Matching)
 
 ## Question
 What does the term return loss mean, and what range is generally considered acceptable for a well-matched RF port at 2.4 GHz?
