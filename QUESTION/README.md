@@ -114,5 +114,6 @@ Wavelength is the speed of propagation divided by frequency, so higher frequency
 </td>
 </tr>
 </table>
+---
 
 
