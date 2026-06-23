@@ -139,3 +139,23 @@ Measure power stage by stage from input to output and find where the level drops
 ---
 
 
+
+## Question7
+A timing report shows one path with positive slack and another with negative slack. What does negative slack tell you about that path?
+
+<table>
+<tr>
+<td width="50%">
+
+### Myself
+Negative slack indicates a timing violation in the path. It means the signal arrives later than the required time, so the path fails to meet the timing constraint. The magnitude of the negative slack shows how much the path misses the target by. As a result, data may not be captured correctly at the destination register, potentially causing functional errors or limiting the design’s maximum operating frequency
+
+</td>
+<td width="50%">
+
+### Answer
+Slack is the margin between the required time and the actual arrival time. Positive slack means the path meets its constraint with room to spare. Negative slack means the path fails, the signal arrives later than allowed, and that path demands action through resizing, restructuring logic, or adjusting the constraint. The most negative slack path, the worst negative slack, sets how far the design is from closing.
+</tr>
+</table>
+---
+
