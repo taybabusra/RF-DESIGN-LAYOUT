@@ -115,6 +115,9 @@ Wavelength is the speed of propagation divided by frequency, so higher frequency
 </tr>
 </table>
 ---
+
+
+
 ## Question6
 An RF path is delivering less signal than expected with no obvious fault. How would you track down where the loss is happening?
 
