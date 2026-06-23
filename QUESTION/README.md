@@ -157,5 +157,26 @@ Negative slack indicates a timing violation in the path. It means the signal arr
 Slack is the margin between the required time and the actual arrival time. Positive slack means the path meets its constraint with room to spare. Negative slack means the path fails, the signal arrives later than allowed, and that path demands action through resizing, restructuring logic, or adjusting the constraint. The most negative slack path, the worst negative slack, sets how far the design is from closing.
 </tr>
 </table>
+
+
 ---
 
+
+## Question8
+How does a floating-gate MOSFET manage to store an analog value for years with no power applied to it?
+
+<table>
+<tr>
+<td width="50%">
+
+### Myself
+A floating-gate MOSFET stores an analog value as electrical charge trapped on an insulated floating gate. This charge shifts the transistor’s threshold voltage, representing the stored value. Because the gate is surrounded by high-quality oxide with extremely low leakage, the charge remains trapped for years without power, enabling non-volatile storage.
+<td width="50%">
+
+### Answer
+Charge is placed on a gate that is completely surrounded by insulator, so it has no path to leak away and stays put for years. That trapped charge shifts the transistor's threshold voltage by a controllable amount, and it is that threshold shift that represents the stored value. This makes it useful for non-volatile trimming, calibration, and weight storage.
+</tr>
+</table>
+
+
+---
