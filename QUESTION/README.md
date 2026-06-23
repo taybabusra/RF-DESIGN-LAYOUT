@@ -115,5 +115,24 @@ Wavelength is the speed of propagation divided by frequency, so higher frequency
 </tr>
 </table>
 ---
+## Question6
+An RF path is delivering less signal than expected with no obvious fault. How would you track down where the loss is happening?
+
+<table>
+<tr>
+<td width="50%">
+
+### Myself
+Verify the accuracy of the test equipment and confirm the anticipated signal level from the link budget. Next, use the Divide-Measure-Isolate-Verify method. Measure the signal levels at each interface after dividing the RF path into segments (source, cables, connectors, passive devices, amplifiers, and antenna). To determine where the divergence starts, compare the actual gain or loss to the requirements. Once a suspicious piece has been identified, isolate it by swapping out parts for known-to-be-good ones. Verify the amplifier's functionality, impedance matching, connections, and cable condition. For insertion/return loss, use a VNA; for cable problems, use a TDR/DTF. Lastly, confirm that overall performance is up to par.
+
+</td>
+<td width="50%">
+
+### Answer
+Measure power stage by stage from input to output and find where the level drops more than it should. Suspect a mismatch reflecting power instead of passing it, a lossy or damaged connector or cable, a stage with low gain because of a bias problem, or a marginal solder joint. Comparing the measured loss at each interface against the expected budget localizes the bad element.
+</td>
+</tr>
+</table>
+---
 
 
