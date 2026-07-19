@@ -259,3 +259,6 @@ I<sub>C</sub> = β I<sub>B</sub>
 
 <p align="center"><b>2nd source of opinione</b></p>
 
+<img width="424" height="276" alt="image" src="https://github.com/user-attachments/assets/87c38b36-a678-455a-8b61-1eea59abdd1d" />
+<img width="407" height="269" alt="image" src="https://github.com/user-attachments/assets/a03f60b6-07f4-4d86-bb71-d4027d553ff0" />
+<img width="508" height="281" alt="image" src="https://github.com/user-attachments/assets/5ec0625a-d4be-4a28-bf25-2d98fba5eba5" />
